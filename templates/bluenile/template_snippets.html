@@ -1,0 +1,40 @@
+<div data-ko-display="imageVisible" data-ko-wrap="false" style="width: 100%; max-width:580px; -ko-max-width:@[18 + Math.round(imageWidth)]px; display:inline-block; display: none;" class="mobile-full">
+  <div style="display:inline-block; max-width:580px; -ko-max-width:@[18 + Math.round(imageWidth)]px; vertical-align:top; width:100%;" class="mobile-full">
+    <table class="vb-content" border="0" cellspacing="9" cellpadding="0" width="580" style="width: 100%; -ko-attr-width: @[18 + Math.round(imageWidth)]" align="left">
+      <tr>
+        <td width="100%" valign="top" align="left" class="links-color">
+          <a data-ko-link="image.url" href="">
+            <img data-ko-editable="image.src" border="0" hspace="0" vspace="0" width="580" data-ko-placeholder-height="300" class="mobile-full"
+              src="http://placehold.it/580x300" class="mobile-full"
+              alt="" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:580px;outline:0;text-decoration:none;width:580px;
+              vertical-align:top; height: auto; -ko-attr-width: @imageWidth; -ko-max-width: @[imageWidth]px; -ko-attr-alt: @image.alt" />
+          </a>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+image:
+in blockdef: properties: image imageVisible=true imageWidth=125;
+             block imageWidth { label: Image Size; widget: select; options: 166=Small|258=Medium|580=Big; }
+in div: data-ko-display="imageVisible"
+in link: data-ko-link="image.url"
+in img: data-ko-editable="image.src"
+        data-ko-placeholder-height="xx"
+        style="-ko-attr-width: @imageWidth; -ko-max-width: @[imageWidth]px; -ko-attr-alt: @image.alt"
+        declare Width attribute
+
+editable text:
+in blockdef: properties: textVisible=true
+in div: data-ko-editable="text" data-ko-visible="textVisible"
+        style="-ko-font-size: @[textStyle.size]px; -ko-font-family: @textStyle.face; -ko-color: @textStyle.color;"
+
+button:
+in blockdef: buttonVisible=true buttonStyle buttonLink
+in div: data-ko-visible="buttonVisible"
+in td: -ko-attr-bgcolor: @buttonStyle.buttonColor; -ko-background-color: @buttonStyle.buttonColor;
+in a: style="-ko-border-radius: @[buttonStyle.radius]px -ko-attr-href: @buttonLink.url;
+               -ko-attr-bgcolor: @buttonStyle.buttonColor; -ko-background-color: @buttonStyle.buttonColor;
+               -ko-font-size: @[buttonStyle.size]px; -ko-font-family: @buttonStyle.face; -ko-color: @buttonStyle.color;"
+in a: data-ko-editable="buttonLink.text"
