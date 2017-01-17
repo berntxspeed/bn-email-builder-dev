@@ -15,6 +15,9 @@
   </div>
 </div>
 
+new block:
+in table: style="background-color: #f0f0f0;-ko-background-color: @backgroundColor;"
+
 image:
 in blockdef: properties: image imageVisible=true imageWidth=125;
              block imageWidth { label: Image Size; widget: select; options: 166=Small|258=Medium|580=Big; }
@@ -32,7 +35,7 @@ in div: data-ko-editable="text" data-ko-visible="textVisible"
 
 button:
 in blockdef: buttonVisible=true buttonStyle buttonLink
-in div: data-ko-visible="buttonVisible"
+in div: data-ko-display="buttonVisible"
 in td: -ko-attr-bgcolor: @buttonStyle.buttonColor; -ko-background-color: @buttonStyle.buttonColor;
 in a: style="-ko-border-radius: @[buttonStyle.radius]px -ko-attr-href: @buttonLink.url;
                -ko-attr-bgcolor: @buttonStyle.buttonColor; -ko-background-color: @buttonStyle.buttonColor;
