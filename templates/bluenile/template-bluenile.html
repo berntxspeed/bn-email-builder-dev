@@ -20,6 +20,8 @@
         paddingRight { label: Pad Right; widget: integer; }
         paddingBottom { label: Pad Bottom; widget: integer; }
         paddingLeft { label: Pad Left; widget: integer; }
+        paddingVert { label: Vertical Padding; widget: integer; }
+        paddingHoriz { label: Horizontal Padding; widget: integer; }
 
         face { label: Font; widget: select; options: Arial, Helvetica, sans-serif=Arial|Arial Black, Arial Black, Gadget, sans-serif=Arial Black|Comic Sans MS, Comic Sans MS5, cursive=Comic Sans|Courier New, Courier New, monospace=Courier|Georgia, serif=Georgia|Impact, sans-serif=Impact|Lucida Console, Monaco, monospace=Lucida Console|Lucida Sans Unicode, Lucida Grande, sans-serif=Lucida Sans Unicode|Times New Roman, Times, serif=Times New Roman|Verdana, Geneva, sans-serif=Verdana}
         decoration { label: Decoration; widget: select; options: none=None|underline=Underline }
@@ -67,12 +69,12 @@
         buttonLink { label: Button; extend: link }
 
         /* texts and links */
-        textStyle { label: Text; properties: face color size }
-        textStyle:preview { -ko-bind-text: @['AaZz']; -ko-font-family: @face; -ko-color: @color; -ko-font-size: @[size]px; }
+        textStyle { label: Text; properties: face color size paddingTop paddingRight paddingBottom paddingLeft }
+        textStyle:preview { -ko-bind-text: @['AaZz']; -ko-font-family: @face; -ko-color: @color; -ko-font-size: @[size]px; -ko-padding: @[paddingTop]px @[paddingRight]px @[paddingBottom]px @[paddingLeft]px; }
         linkStyle { label: Link; properties: face color size decoration=none }
         linkStyle:preview { -ko-bind-text: @['Link']; -ko-font-size: @[size]px; -ko-font-family: @face; -ko-color: @color; -ko-text-decoration: @[decoration] }
-        longTextStyle { label: Paragraph; properties: face color size linksColor   }
-        longTextStyle:preview { -ko-bind-text: @['AaZz']; -ko-font-family: @face; -ko-color: @color; -ko-font-size: @[size]px; }
+        longTextStyle { label: Paragraph; properties: face color size linksColor paddingTop paddingRight paddingBottom paddingLeft  }
+        longTextStyle:preview { -ko-bind-text: @['AaZz']; -ko-font-family: @face; -ko-color: @color; -ko-font-size: @[size]px; -ko-padding: @[paddingTop]px @[paddingRight]px @[paddingBottom]px @[paddingLeft]px; }
         bigButtonStyle { label: Big Button; extend: buttonStyle }
         titleTextStyle { label: Title; extend: longTextStyle }
 
@@ -90,8 +92,8 @@
         /* buttons */
         buttonStyle color { label: Text Color; extend: color }
         buttonStyle size { label: Text Size; extend: size }
-        buttonStyle { label: Button; properties: face color size buttonColor radius }
-        buttonStyle:preview { -ko-bind-text: @['Button']; -ko-font-family: @face; -ko-color: @color; -ko-font-size: @[size]px; -ko-background-color: @buttonColor; padding-left: 5px; -ko-border-radius: @[radius]px; -ko-border-color: @buttonColor; }
+        buttonStyle { label: Button; properties: face color size buttonColor radius paddingVert paddingHoriz }
+        buttonStyle:preview { -ko-bind-text: @['Button']; -ko-font-family: @face; -ko-color: @color; -ko-font-size: @[size]px; -ko-background-color: @buttonColor; -ko-border-radius: @[radius]px; -ko-border-color: @buttonColor; -ko-padding: @[paddingVert]px @[paddingHoriz]px @[paddingVert]px @[paddingHoriz]px; }
 
         /* contents */
         preheaderText {label: PreHeader Text; extend:text; help: This text will be shown on some email clients as a preview of the email contents;}
@@ -140,14 +142,14 @@
         footerBlock { label: Unsubscribe Block; theme: frameTheme }
 
         spacerBlock { label: Spacer Block; properties: externalBackgroundColor spacerStyle spacerSize=30; theme: contentTheme }
-    
+
         threeWideBlock leftImageWidth { label: Image Size; widget: select; options: 100=Small|125=Medium|200=Big; }
         threeWideBlock centerImageWidth { label: Image Size; widget: select; options: 100=Small|125=Medium|200=Big; }
         threeWideBlock rightImageWidth { label: Image Size; widget: select; options: 100=Small|125=Medium|200=Big; }
         threeWideBlock { label: Three Wide Block; properties: externalBackgroundColor backgroundColor leftTitleVisible=true centerTitleVisible=true rightTitleVisible=true leftTextVisible=true centerTextVisible=true rightTextVisible=true leftButtonVisible=true centerButtonVisible=true rightButtonVisible=true leftImageVisible=true centerImageVisible=true rightImageVisible=true leftImageSize=125 centerImageSize=125 rightImageSize=125; theme: contentTheme }
 
         sixtyFortyBlock imageWidth { label: Image Size; widget: select; options: 125=Small|170=Medium|250=Big; }
-        sixtyFortyBlock { label: Sixty by Forty Block; properties: externalBackgroundColor backgroundColor titleVisible=true textVisible=true buttonVisible=true imageVisible=true imageWidth=125; theme: contentTheme }
+        sixtyFortyBlock { label: Sixty by Forty Block; properties: externalBackgroundColor backgroundColor titleVisible=true textVisible=true buttonVisible=true imageVisible=true imageWidth=125 buttonStyle; theme: contentTheme }
 
         fortySixtyBlock imageWidth { label: Image Size; widget: select; options: 125=Small|170=Medium|250=Big; }
         fortySixtyBlock  { label: Forty by Sixty Image and Text; properties: externalBackgroundColor backgroundColor image imageVisible=true imageWidth=125 titleVisible=true textVisible=true buttonVisible=true; theme: contentTheme }
@@ -320,15 +322,16 @@
                                 <tr style="padding:0;text-align:left;vertical-align:top">
                                   <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
                                     <div data-ko-editable="titleLongText" data-ko-display="titleVisible"
-                                    style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:24px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left;word-wrap:normal;
+                                    style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:24px;font-weight:400;padding:0;line-height:1.3;margin:0;margin-bottom:10px;text-align:left;word-wrap:normal;
                                     -ko-font-size: @[titleTextStyle.size]px; -ko-font-family: @titleTextStyle.face; -ko-color: @titleTextStyle.color;">
-                                      <h2>
+                                      <h2 style="padding: 0px 0px 0px 0px;-ko-padding: @[titleTextStyle.paddingTop]px @[titleTextStyle.paddingRight]px @[titleTextStyle.paddingBottom]px @[titleTextStyle.paddingLeft]px;">
                                         This is a title
                                       </h2>
                                     </div>
                                     <div data-ko-editable="copyLongText" data-ko-display="textVisible"
                                     style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left;
-                                    -ko-font-size: @[copyTextStyle.size]px; -ko-font-family: @copyTextStyle.face; -ko-color: @copyTextStyle.color;">
+                                    -ko-font-size: @[copyTextStyle.size]px; -ko-font-family: @copyTextStyle.face; -ko-color: @copyTextStyle.color;
+                                    padding: 0px 0px 0px 0px;-ko-padding: @[copyTextStyle.paddingTop]px @[copyTextStyle.paddingRight]px @[copyTextStyle.paddingBottom]px @[copyTextStyle.paddingLeft]px;">
                                       <p>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
                                       </p>
@@ -342,7 +345,8 @@
                                               -ko-attr-bgcolor: @buttonStyle.buttonColor; -ko-background-color: @buttonStyle.buttonColor;">
                                                 <a data-ko-editable="buttonLink.text" href="#" style="Margin:0;border:0 solid #2299e8;border-color: #2299e8;border-radius:3px;color:#fefefe;display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;line-height:1.3;margin:0;padding:10px 20px 10px 20px;text-align:left;text-decoration:none;
                                                 -ko-border-radius: @[buttonStyle.radius]px; -ko-color: @buttonStyle.color; -ko-font-size: @[buttonStyle.size]px;
-                                                -ko-font-family: @buttonStyle.face; -ko-attr-href: @buttonLink.url; -ko-border-color: @buttonStyle.buttonColor;">
+                                                -ko-font-family: @buttonStyle.face; -ko-attr-href: @buttonLink.url; -ko-border-color: @buttonStyle.buttonColor;
+                                                -padding-top:10px;-padding-right:20px;-padding-bottom:10px;-padding-left:20px;-ko-attr-padding-top: @[buttonStyle.paddingTop]px; -ko-attr-padding-right: @[buttonStyle.paddingRight]px; -ko-attr-padding-bottom: @[buttonStyle.paddingBottom]px; -ko-attr-padding-left: @[buttonStyle.paddingLeft]px;">
                                                   Click Me!
                                                 </a>
                                               </td>
@@ -364,7 +368,7 @@
                                         <img data-ko-editable="image.src" data-ko-placeholder-height="200" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
                                         style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
                                         -ko-attr-width: @imageWidth; -ko-max-width: @[imageWidth]px; -ko-attr-alt: @image.alt;
-                                        -ko-attr-padding-top: @[image.paddingTop]px; -ko-attr-padding-right: @[image.paddingRight]px; -ko-attr-padding-bottom: @[image.paddingBottom]px; -ko-attr-padding-left: @[image.paddingLeft]px;">
+                                        padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;-ko-attr-padding-top: @[image.paddingTop]px; -ko-attr-padding-right: @[image.paddingRight]px; -ko-attr-padding-bottom: @[image.paddingBottom]px; -ko-attr-padding-left: @[image.paddingLeft]px;">
                                       </a>
                                     </th>
                                   </tr>
