@@ -1,3 +1,14 @@
+# Used for dev'ing mosaico templates
+
+- mainly b/c it creates the thumbnail images for all the blocks :)
+- and it's easy to iteratively debug here, then transfer to BN app when ready
+
+$sudo npm install --save-dev
+$sudo grunt makeThumbs
+$sudo grunt server
+
+# Original Mosaico Notes Below
+
 # Mosaico - Responsive Email Template Editor
 
 Mosaico is a JavaScript library (or maybe a single page application) supporting the editing of email templates.
