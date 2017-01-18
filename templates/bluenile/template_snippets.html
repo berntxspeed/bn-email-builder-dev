@@ -26,12 +26,14 @@ in link: data-ko-link="image.url"
 in img: data-ko-editable="image.src"
         data-ko-placeholder-height="xx"
         style="-ko-attr-width: @imageWidth; -ko-max-width: @[imageWidth]px; -ko-attr-alt: @image.alt"
+        padding: 0px 0px 0px 0px; -ko-padding: @[image.paddingTop]px @[image.paddingRight]px @[image.paddingBottom]px @[image.paddingLeft]px;
         declare Width attribute
 
 editable text:
 in blockdef: properties: textVisible=true
 in div: data-ko-editable="text" data-ko-visible="textVisible"
         style="-ko-font-size: @[textStyle.size]px; -ko-font-family: @textStyle.face; -ko-color: @textStyle.color;"
+        padding: 0px 0px 0px 0px; -ko-padding: @[textStyle.paddingTop]px @[textStyle.paddingRight]px @[textStyle.paddingBottom]px @[textStyle.paddingLeft]px;
 
 button:
 in blockdef: buttonVisible=true buttonStyle buttonLink
