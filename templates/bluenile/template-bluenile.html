@@ -153,6 +153,69 @@
         centerFourthPosSelect { label: Select Center Fourth Content; widget: select; options: title=Title|txt=Text|img=Image|btn=Button|empty=Empty; }
         centerFifthPosSelect { label: Select Center Fifth Content; widget: select; options: title=Title|txt=Text|img=Image|btn=Button|empty=Empty; }
 
+        firstImage { label: First Image; extend: image; }
+        secondImage { label: Second Image; extend: image; }
+        thirdImage { label: Third Image; extend: image; }
+        fourthImage { label: Fourth Image; extend: image; }
+        fifthImage { label: Fifth Image; extend: image; }
+        leftFirstImage { label: Left First Image; extend: image; }
+        leftSecondImage { label: Left Second Image; extend: image; }
+        leftThirdImage { label: Left Third Image; extend: image; }
+        leftFourthImage { label: Left Fourth Image; extend: image; }
+        leftFifthImage { label: Left Fifth Image; extend: image; }
+        rightFirstImage { label: Right First Image; extend: image; }
+        rightSecondImage { label: Right Second Image; extend: image; }
+        rightThirdImage { label: Right Third Image; extend: image; }
+        rightFourthImage { label: Right Fourth Image; extend: image; }
+        rightFifthImage { label: Right Fifth Image; extend: image; }
+        centerFirstImage { label: Center First Image; extend: image; }
+        centerSecondImage { label: Center Second Image; extend: image; }
+        centerThirdImage { label: Center Third Image; extend: image; }
+        centerFourthImage { label: Center Fourth Image; extend: image; }
+        centerFifthImage { label: Center Fifth Image; extend: image; }
+
+        firstImageWidth { label: First Image Size; extend: imageWidth; }
+        secondImageWidth { label: Second Image Size; extend: imageWidth; }
+        thirdImageWidth { label: Third Image Size; extend: imageWidth; }
+        fourthImageWidth { label: Fourth Image Size; extend: imageWidth; }
+        fifthImageWidth { label: Fifth Image Size; extend: imageWidth; }
+        leftFirstImageWidth { label: Left First Image Size; extend: imageWidth; }
+        leftSecondImageWidth { label: Left Second Image Size; extend: imageWidth; }
+        leftThirdImageWidth { label: Left Third Image Size; extend: imageWidth; }
+        leftFourthImageWidth { label: Left Fourth Image Size; extend: imageWidth; }
+        leftFifthImageWidth { label: Left Fifth Image Size; extend: imageWidth; }
+        rightFirstImageWidth { label: Right First Image Size; extend: imageWidth; }
+        rightSecondImageWidth { label: Right Second Image Size; extend: imageWidth; }
+        rightThirdImageWidth { label: Right Third Image Size; extend: imageWidth; }
+        rightFourthImageWidth { label: Right Fourth Image Size; extend: imageWidth; }
+        rightFifthImageWidth { label: Right Fifth Image Size; extend: imageWidth; }
+        centerFirstImageWidth { label: Center First Image Size; extend: imageWidth; }
+        centerSecondImageWidth { label: Center Second Image Size; extend: imageWidth; }
+        centerThirdImageWidth { label: Center Third Image Size; extend: imageWidth; }
+        centerFourthImageWidth { label: Center Fourth Image Size; extend: imageWidth; }
+        centerFifthImageWidth { label: Center Fifth Image Size; extend: imageWidth; }
+
+        firstButtonLink { label: First Button Link; extend: buttonLink }
+        secondButtonLink { label: Second Button Link; extend: buttonLink }
+        thirdButtonLink { label: Third Button Link; extend: buttonLink }
+        fourthButtonLink { label: Fourth Button Link; extend: buttonLink }
+        fifthButtonLink { label: Fifth Button Link; extend: buttonLink }
+        leftFirstButtonLink { label: Left First Button Link; extend: buttonLink }
+        leftSecondButtonLink { label: Left Second Button Link; extend: buttonLink }
+        leftThirdButtonLink { label: Left Third Button Link; extend: buttonLink }
+        leftFourthButtonLink { label: Left Fourth Button Link; extend: buttonLink }
+        leftFifthButtonLink { label: Left Fifth Button Link; extend: buttonLink }
+        rightFirstButtonLink { label: Right First Button Link; extend: buttonLink }
+        rightSecondButtonLink { label: Right Second Button Link; extend: buttonLink }
+        rightThirdButtonLink { label: Right Third Button Link; extend: buttonLink }
+        rightFourthButtonLink { label: Right Fourth Button Link; extend: buttonLink }
+        rightFifthButtonLink { label: Right Fifth Button Link; extend: buttonLink }
+        centerFirstButtonLink { label: Center First Button Link; extend: buttonLink }
+        centerSecondButtonLink { label: Center Second Button Link; extend: buttonLink }
+        centerThirdButtonLink { label: Center Third Button Link; extend: buttonLink }
+        centerFourthButtonLink { label: Center Fourth Button Link; extend: buttonLink }
+        centerFifthButtonLink { label: Center Fifth Button Link; extend: buttonLink }
+
         contentTheme { label: Main Style; }
         contentTheme:preview { -ko-background-color: @[backgroundColor] }
         frameTheme { label: Frame Style; }
@@ -165,15 +228,11 @@
 
         spacerBlock { label: Spacer Block; properties: externalBackgroundColor spacerStyle spacerSize=30; theme: contentTheme }
 
-        threeWideBlock leftImageWidth { label: Image Size; widget: select; options: 100=Small|125=Medium|200=Big; }
-        threeWideBlock centerImageWidth { label: Image Size; widget: select; options: 100=Small|125=Medium|200=Big; }
-        threeWideBlock rightImageWidth { label: Image Size; widget: select; options: 100=Small|125=Medium|200=Big; }
-        threeWideBlock { label: Three Wide Block; properties: externalBackgroundColor backgroundColor leftTitleVisible=true centerTitleVisible=true rightTitleVisible=true leftTextVisible=true centerTextVisible=true rightTextVisible=true leftButtonVisible=true centerButtonVisible=true rightButtonVisible=true leftImageVisible=true centerImageVisible=true rightImageVisible=true leftImageSize=125 centerImageSize=125 rightImageSize=125; theme: contentTheme }
-
         textCopyCtaBlock { label: Text Copy CTA Block; properties: externalBackgroundColor backgroundColor firstPosSelect=img secondPosSelect=title thirdPosSelect=txt fourthPosSelect=btn fifthPosSelect=empty titleTextStyle firstImageWidth=125 secondImageWidth=125 thirdImageWidth=125 fourthImageWidth=125 fifthImageWidth=125; theme: contentTheme }
         fortySixtyBlock { label: Forty by Sixty Block; properties: externalBackgroundColor backgroundColor leftFirstPosSelect=img leftSecondPosSelect=empty leftThirdPosSelect=empty leftFourthPosSelect=empty leftFifthPosSelect=empty rightFirstPosSelect=title rightSecondPosSelect=txt rightThirdPosSelect=btn rightFourthPosSelect=empty rightFifthPosSelect=empty leftFirstImageWidth=125 leftSecondImageWidth=125 leftThirdImageWidth=125 leftFourthImageWidth=125 leftFifthImageWidth=125 rightFirstImageWidth=125 rightSecondImageWidth=125 rightThirdImageWidth=125 rightFourthImageWidth=125 rightFifthImageWidth=125; theme: contentTheme }
         sixtyFortyBlock { label: Sixty by Forty Block; properties: externalBackgroundColor backgroundColor leftFirstPosSelect=title leftSecondPosSelect=txt leftThirdPosSelect=btn leftFourthPosSelect=empty leftFifthPosSelect=empty rightFirstPosSelect=img rightSecondPosSelect=empty rightThirdPosSelect=empty rightFourthPosSelect=empty rightFifthPosSelect=empty leftFirstImageWidth=125 leftSecondImageWidth=125 leftThirdImageWidth=125 leftFourthImageWidth=125 leftFifthImageWidth=125 rightFirstImageWidth=125 rightSecondImageWidth=125 rightThirdImageWidth=125 rightFourthImageWidth=125 rightFifthImageWidth=125; theme: contentTheme }
-        fiftyFiftyBlock { label: Fifty by Fifty Block; properties: externalBackgroundColor backgroundColor leftFirstPosSelect=title leftSecondPosSelect=txt leftThirdPosSelect=btn leftFourthPosSelect=empty leftFifthPosSelect=empty rightFirstPosSelect=img rightSecondPosSelect=empty rightThirdPosSelect=empty rightFourthPosSelect=empty rightFifthPosSelect=empty leftFirstImageWidth=125 leftSecondImageWidth=125 leftThirdImageWidth=125 leftFourthImageWidth=125 leftFifthImageWidth=125 rightFirstImageWidth=125 rightSecondImageWidth=125 rightThirdImageWidth=125 rightFourthImageWidth=125 rightFifthImageWidth=125; theme: contentTheme }
+        fiftyFiftyBlock { label: Fifty by Fifty Block; properties: externalBackgroundColor backgroundColor leftFirstPosSelect=img leftSecondPosSelect=title leftThirdPosSelect=txt leftFourthPosSelect=btn leftFifthPosSelect=empty rightFirstPosSelect=img rightSecondPosSelect=title rightThirdPosSelect=txt rightFourthPosSelect=btn rightFifthPosSelect=empty leftFirstImageWidth=125 leftSecondImageWidth=125 leftThirdImageWidth=125 leftFourthImageWidth=125 leftFifthImageWidth=125 rightFirstImageWidth=125 rightSecondImageWidth=125 rightThirdImageWidth=125 rightFourthImageWidth=125 rightFifthImageWidth=125; theme: contentTheme }
+        threeWideBlock { label: Fifty by Fifty Block; properties: externalBackgroundColor backgroundColor leftFirstPosSelect=img leftSecondPosSelect=title leftThirdPosSelect=txt leftFourthPosSelect=btn leftFifthPosSelect=empty rightFirstPosSelect=img rightSecondPosSelect=title rightThirdPosSelect=txt rightFourthPosSelect=btn rightFifthPosSelect=empty centerFirstPosSelect=img centerSecondPosSelect=title centerThirdPosSelect=txt centerFourthPosSelect=btn centerFifthPosSelect=empty leftFirstImageWidth=125 leftSecondImageWidth=125 leftThirdImageWidth=125 leftFourthImageWidth=125 leftFifthImageWidth=125 rightFirstImageWidth=125 rightSecondImageWidth=125 rightThirdImageWidth=125 rightFourthImageWidth=125 rightFifthImageWidth=125 centerFirstImageWidth=125 centerSecondImageWidth=125 centerThirdImageWidth=125 centerFourthImageWidth=125 centerFifthImageWidth=125; theme: contentTheme }
 
 
         preheaderBlock:preview,
@@ -344,7 +403,7 @@
                                         -ko-font-size: @[leftFirstCopyTextStyle.size]px; -ko-font-family: @leftFirstCopyTextStyle.face; -ko-color: @leftFirstCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[leftFirstCopyTextStyle.paddingTop]px @[leftFirstCopyTextStyle.paddingRight]px @[leftFirstCopyTextStyle.paddingBottom]px @[leftFirstCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -396,7 +455,7 @@
                                         -ko-font-size: @[leftSecondCopyTextStyle.size]px; -ko-font-family: @leftSecondCopyTextStyle.face; -ko-color: @leftSecondCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[leftSecondCopyTextStyle.paddingTop]px @[leftSecondCopyTextStyle.paddingRight]px @[leftSecondCopyTextStyle.paddingBottom]px @[leftSecondCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -448,7 +507,7 @@
                                         -ko-font-size: @[leftThirdCopyTextStyle.size]px; -ko-font-family: @leftThirdCopyTextStyle.face; -ko-color: @leftThirdCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[leftThirdCopyTextStyle.paddingTop]px @[leftThirdCopyTextStyle.paddingRight]px @[leftThirdCopyTextStyle.paddingBottom]px @[leftThirdCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -500,7 +559,7 @@
                                         -ko-font-size: @[leftFourthCopyTextStyle.size]px; -ko-font-family: @leftFourthCopyTextStyle.face; -ko-color: @leftFourthCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[leftFourthCopyTextStyle.paddingTop]px @[leftFourthCopyTextStyle.paddingRight]px @[leftFourthCopyTextStyle.paddingBottom]px @[leftFourthCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -552,7 +611,7 @@
                                         -ko-font-size: @[leftFifthCopyTextStyle.size]px; -ko-font-family: @leftFifthCopyTextStyle.face; -ko-color: @leftFifthCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[leftFifthCopyTextStyle.paddingTop]px @[leftFifthCopyTextStyle.paddingRight]px @[leftFifthCopyTextStyle.paddingBottom]px @[leftFifthCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -612,7 +671,7 @@
                                         -ko-font-size: @[rightFirstCopyTextStyle.size]px; -ko-font-family: @rightFirstCopyTextStyle.face; -ko-color: @rightFirstCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[rightFirstCopyTextStyle.paddingTop]px @[rightFirstCopyTextStyle.paddingRight]px @[rightFirstCopyTextStyle.paddingBottom]px @[rightFirstCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -664,7 +723,7 @@
                                         -ko-font-size: @[rightSecondCopyTextStyle.size]px; -ko-font-family: @rightSecondCopyTextStyle.face; -ko-color: @rightSecondCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[rightSecondCopyTextStyle.paddingTop]px @[rightSecondCopyTextStyle.paddingRight]px @[rightSecondCopyTextStyle.paddingBottom]px @[rightSecondCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -716,7 +775,7 @@
                                         -ko-font-size: @[rightThirdCopyTextStyle.size]px; -ko-font-family: @rightThirdCopyTextStyle.face; -ko-color: @rightThirdCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[rightThirdCopyTextStyle.paddingTop]px @[rightThirdCopyTextStyle.paddingRight]px @[rightThirdCopyTextStyle.paddingBottom]px @[rightThirdCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -768,7 +827,7 @@
                                         -ko-font-size: @[rightFourthCopyTextStyle.size]px; -ko-font-family: @rightFourthCopyTextStyle.face; -ko-color: @rightFourthCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[rightFourthCopyTextStyle.paddingTop]px @[rightFourthCopyTextStyle.paddingRight]px @[rightFourthCopyTextStyle.paddingBottom]px @[rightFourthCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -820,7 +879,7 @@
                                         -ko-font-size: @[rightFifthCopyTextStyle.size]px; -ko-font-family: @rightFifthCopyTextStyle.face; -ko-color: @rightFifthCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[rightFifthCopyTextStyle.paddingTop]px @[rightFifthCopyTextStyle.paddingRight]px @[rightFifthCopyTextStyle.paddingBottom]px @[rightFifthCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -887,7 +946,7 @@
                                         -ko-font-size: @[leftFirstCopyTextStyle.size]px; -ko-font-family: @leftFirstCopyTextStyle.face; -ko-color: @leftFirstCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[leftFirstCopyTextStyle.paddingTop]px @[leftFirstCopyTextStyle.paddingRight]px @[leftFirstCopyTextStyle.paddingBottom]px @[leftFirstCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -939,7 +998,7 @@
                                         -ko-font-size: @[leftSecondCopyTextStyle.size]px; -ko-font-family: @leftSecondCopyTextStyle.face; -ko-color: @leftSecondCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[leftSecondCopyTextStyle.paddingTop]px @[leftSecondCopyTextStyle.paddingRight]px @[leftSecondCopyTextStyle.paddingBottom]px @[leftSecondCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -991,7 +1050,7 @@
                                         -ko-font-size: @[leftThirdCopyTextStyle.size]px; -ko-font-family: @leftThirdCopyTextStyle.face; -ko-color: @leftThirdCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[leftThirdCopyTextStyle.paddingTop]px @[leftThirdCopyTextStyle.paddingRight]px @[leftThirdCopyTextStyle.paddingBottom]px @[leftThirdCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -1043,7 +1102,7 @@
                                         -ko-font-size: @[leftFourthCopyTextStyle.size]px; -ko-font-family: @leftFourthCopyTextStyle.face; -ko-color: @leftFourthCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[leftFourthCopyTextStyle.paddingTop]px @[leftFourthCopyTextStyle.paddingRight]px @[leftFourthCopyTextStyle.paddingBottom]px @[leftFourthCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -1095,7 +1154,7 @@
                                         -ko-font-size: @[leftFifthCopyTextStyle.size]px; -ko-font-family: @leftFifthCopyTextStyle.face; -ko-color: @leftFifthCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[leftFifthCopyTextStyle.paddingTop]px @[leftFifthCopyTextStyle.paddingRight]px @[leftFifthCopyTextStyle.paddingBottom]px @[leftFifthCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -1155,7 +1214,7 @@
                                         -ko-font-size: @[rightFirstCopyTextStyle.size]px; -ko-font-family: @rightFirstCopyTextStyle.face; -ko-color: @rightFirstCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[rightFirstCopyTextStyle.paddingTop]px @[rightFirstCopyTextStyle.paddingRight]px @[rightFirstCopyTextStyle.paddingBottom]px @[rightFirstCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -1207,7 +1266,7 @@
                                         -ko-font-size: @[rightSecondCopyTextStyle.size]px; -ko-font-family: @rightSecondCopyTextStyle.face; -ko-color: @rightSecondCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[rightSecondCopyTextStyle.paddingTop]px @[rightSecondCopyTextStyle.paddingRight]px @[rightSecondCopyTextStyle.paddingBottom]px @[rightSecondCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -1259,7 +1318,7 @@
                                         -ko-font-size: @[rightThirdCopyTextStyle.size]px; -ko-font-family: @rightThirdCopyTextStyle.face; -ko-color: @rightThirdCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[rightThirdCopyTextStyle.paddingTop]px @[rightThirdCopyTextStyle.paddingRight]px @[rightThirdCopyTextStyle.paddingBottom]px @[rightThirdCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -1311,7 +1370,7 @@
                                         -ko-font-size: @[rightFourthCopyTextStyle.size]px; -ko-font-family: @rightFourthCopyTextStyle.face; -ko-color: @rightFourthCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[rightFourthCopyTextStyle.paddingTop]px @[rightFourthCopyTextStyle.paddingRight]px @[rightFourthCopyTextStyle.paddingBottom]px @[rightFourthCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -1363,7 +1422,7 @@
                                         -ko-font-size: @[rightFifthCopyTextStyle.size]px; -ko-font-family: @rightFifthCopyTextStyle.face; -ko-color: @rightFifthCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[rightFifthCopyTextStyle.paddingTop]px @[rightFifthCopyTextStyle.paddingRight]px @[rightFifthCopyTextStyle.paddingBottom]px @[rightFifthCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -1430,7 +1489,7 @@
                                         -ko-font-size: @[firstCopyTextStyle.size]px; -ko-font-family: @firstCopyTextStyle.face; -ko-color: @firstCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[firstCopyTextStyle.paddingTop]px @[firstCopyTextStyle.paddingRight]px @[firstCopyTextStyle.paddingBottom]px @[firstCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -1486,7 +1545,7 @@
                                         -ko-font-size: @[secondCopyTextStyle.size]px; -ko-font-family: @secondCopyTextStyle.face; -ko-color: @secondCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[secondCopyTextStyle.paddingTop]px @[secondCopyTextStyle.paddingRight]px @[secondCopyTextStyle.paddingBottom]px @[secondCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -1542,7 +1601,7 @@
                                         -ko-font-size: @[thirdCopyTextStyle.size]px; -ko-font-family: @thirdCopyTextStyle.face; -ko-color: @thirdCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[thirdCopyTextStyle.paddingTop]px @[thirdCopyTextStyle.paddingRight]px @[thirdCopyTextStyle.paddingBottom]px @[thirdCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -1598,7 +1657,7 @@
                                         -ko-font-size: @[fourthCopyTextStyle.size]px; -ko-font-family: @fourthCopyTextStyle.face; -ko-color: @fourthCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[fourthCopyTextStyle.paddingTop]px @[fourthCopyTextStyle.paddingRight]px @[fourthCopyTextStyle.paddingBottom]px @[fourthCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -1654,7 +1713,7 @@
                                         -ko-font-size: @[fifthCopyTextStyle.size]px; -ko-font-family: @fifthCopyTextStyle.face; -ko-color: @fifthCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[fifthCopyTextStyle.paddingTop]px @[fifthCopyTextStyle.paddingRight]px @[fifthCopyTextStyle.paddingBottom]px @[fifthCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -1727,7 +1786,7 @@
                                         -ko-font-size: @[leftFirstCopyTextStyle.size]px; -ko-font-family: @leftFirstCopyTextStyle.face; -ko-color: @leftFirstCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[leftFirstCopyTextStyle.paddingTop]px @[leftFirstCopyTextStyle.paddingRight]px @[leftFirstCopyTextStyle.paddingBottom]px @[leftFirstCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -1783,7 +1842,7 @@
                                         -ko-font-size: @[leftSecondCopyTextStyle.size]px; -ko-font-family: @leftSecondCopyTextStyle.face; -ko-color: @leftSecondCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[leftSecondCopyTextStyle.paddingTop]px @[leftSecondCopyTextStyle.paddingRight]px @[leftSecondCopyTextStyle.paddingBottom]px @[leftSecondCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -1839,7 +1898,7 @@
                                         -ko-font-size: @[leftThirdCopyTextStyle.size]px; -ko-font-family: @leftThirdCopyTextStyle.face; -ko-color: @leftThirdCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[leftThirdCopyTextStyle.paddingTop]px @[leftThirdCopyTextStyle.paddingRight]px @[leftThirdCopyTextStyle.paddingBottom]px @[leftThirdCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -1895,7 +1954,7 @@
                                         -ko-font-size: @[leftFourthCopyTextStyle.size]px; -ko-font-family: @leftFourthCopyTextStyle.face; -ko-color: @leftFourthCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[leftFourthCopyTextStyle.paddingTop]px @[leftFourthCopyTextStyle.paddingRight]px @[leftFourthCopyTextStyle.paddingBottom]px @[leftFourthCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -1951,7 +2010,7 @@
                                         -ko-font-size: @[leftFifthCopyTextStyle.size]px; -ko-font-family: @leftFifthCopyTextStyle.face; -ko-color: @leftFifthCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[leftFifthCopyTextStyle.paddingTop]px @[leftFifthCopyTextStyle.paddingRight]px @[leftFifthCopyTextStyle.paddingBottom]px @[leftFifthCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -2015,7 +2074,7 @@
                                         -ko-font-size: @[rightFirstCopyTextStyle.size]px; -ko-font-family: @rightFirstCopyTextStyle.face; -ko-color: @rightFirstCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[rightFirstCopyTextStyle.paddingTop]px @[rightFirstCopyTextStyle.paddingRight]px @[rightFirstCopyTextStyle.paddingBottom]px @[rightFirstCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -2071,7 +2130,7 @@
                                         -ko-font-size: @[rightSecondCopyTextStyle.size]px; -ko-font-family: @rightSecondCopyTextStyle.face; -ko-color: @rightSecondCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[rightSecondCopyTextStyle.paddingTop]px @[rightSecondCopyTextStyle.paddingRight]px @[rightSecondCopyTextStyle.paddingBottom]px @[rightSecondCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -2127,7 +2186,7 @@
                                         -ko-font-size: @[rightThirdCopyTextStyle.size]px; -ko-font-family: @rightThirdCopyTextStyle.face; -ko-color: @rightThirdCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[rightThirdCopyTextStyle.paddingTop]px @[rightThirdCopyTextStyle.paddingRight]px @[rightThirdCopyTextStyle.paddingBottom]px @[rightThirdCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -2183,7 +2242,7 @@
                                         -ko-font-size: @[rightFourthCopyTextStyle.size]px; -ko-font-family: @rightFourthCopyTextStyle.face; -ko-color: @rightFourthCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[rightFourthCopyTextStyle.paddingTop]px @[rightFourthCopyTextStyle.paddingRight]px @[rightFourthCopyTextStyle.paddingBottom]px @[rightFourthCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -2239,7 +2298,7 @@
                                         -ko-font-size: @[rightFifthCopyTextStyle.size]px; -ko-font-family: @rightFifthCopyTextStyle.face; -ko-color: @rightFifthCopyTextStyle.color;
                                         padding: 0px 0px 0px 0px;-ko-padding: @[rightFifthCopyTextStyle.paddingTop]px @[rightFifthCopyTextStyle.paddingRight]px @[rightFifthCopyTextStyle.paddingBottom]px @[rightFifthCopyTextStyle.paddingLeft]px;">
                                           <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at, nihil quas harum mollitia dolores odio. Inventore delectus nihil soluta quos, magni doloribus, voluptas aspernatur explicabo atque perspiciatis possimus voluptates.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                           </p>
                                         </td>
                                       </tr>
@@ -2293,50 +2352,286 @@
                               <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
                                 <tr style="padding:0;text-align:left;vertical-align:top">
                                   <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
-                                    <div data-ko-display="leftImageVisible">
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="leftFirstPosSelect eq 'title'">
+                                        <td data-ko-editable="leftFirstTitleLongText" style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:24px;font-weight:400;padding:0;line-height:1.3;margin:0;margin-bottom:10px;text-align:left;word-wrap:normal;
+                                        -ko-font-size: @[leftFirstTitleTextStyle.size]px; -ko-font-family: @leftFirstTitleTextStyle.face; -ko-color: @leftFirstTitleTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[leftFirstTitleTextStyle.paddingTop]px @[leftFirstTitleTextStyle.paddingRight]px @[leftFirstTitleTextStyle.paddingBottom]px @[leftFirstTitleTextStyle.paddingLeft]px;">
+                                          <h2>
+                                            This is a title
+                                          </h2>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="leftFirstPosSelect eq 'txt'">
+                                        <td data-ko-editable="leftFirstCopyLongText" style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left;
+                                        -ko-font-size: @[leftFirstCopyTextStyle.size]px; -ko-font-family: @leftFirstCopyTextStyle.face; -ko-color: @leftFirstCopyTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[leftFirstCopyTextStyle.paddingTop]px @[leftFirstCopyTextStyle.paddingRight]px @[leftFirstCopyTextStyle.paddingBottom]px @[leftFirstCopyTextStyle.paddingLeft]px;">
+                                          <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table data-ko-display="leftFirstPosSelect eq 'btn'" class="button large secondary" style="Margin:0 0 16px 0;border-collapse:collapse;border-spacing:0;margin:0 0 16px 0;padding:0;text-align:left;vertical-align:top;width:auto">
+                                      <tr style="padding:0;text-align:left;vertical-align:top">
+                                        <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                          <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                            <tr style="padding:0;text-align:center;vertical-align:top">
+                                              <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;bgcolor:#2299e8;background:#2299e8;background-color:#2299e8;border:0 solid #2299e8;border-collapse:collapse!important;color:#fefefe;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;
+                                              -ko-attr-bgcolor: @leftFirstButtonStyle.buttonColor; -ko-background-color: @leftFirstButtonStyle.buttonColor;">
+                                                <a data-ko-editable="leftFirstButtonLink.text" href="#" style="Margin:0;border:0 solid #2299e8;border-color: #2299e8;border-radius:3px;color:#fefefe;display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;line-height:1.3;margin:0;padding:10px 20px 10px 20px;text-align:left;text-decoration:none;
+                                                -ko-border-radius: @[leftFirstButtonStyle.radius]px; -ko-color: @leftFirstButtonStyle.color; -ko-font-size: @[leftFirstButtonStyle.size]px;
+                                                -ko-font-family: @leftFirstButtonStyle.face; -ko-attr-href: @leftFirstButtonLink.url; -ko-border-color: @leftFirstButtonStyle.buttonColor;
+                                                -padding:10px 20px 10px 20px;-ko-padding: @[leftFirstButtonStyle.paddingVert]px @[leftFirstButtonStyle.paddingHoriz]px @[leftFirstButtonStyle.paddingVert]px @[leftFirstButtonStyle.paddingHoriz]px;">
+                                                  Click Me!
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <div data-ko-display="leftFirstPosSelect eq 'img'">
                                       <center data-parsed="" style="min-width:145.33px;width:100%">
-                                        <a data-ko-link="leftImage.url" href="">
-                                          <img data-ko-editable="leftImage.src" data-ko-placeholder-height="125" src="http://placehold.it/50x50" align="center"
-                                          class="float-center" alt="" width="125" style="-ms-interpolation-mode:bicubic;Margin:0 auto;clear:both;display:block;float:none;margin:0 auto;max-width:125px;outline:0;text-align:center;text-decoration:none;width:125;
-                                          -ko-attr-width: @leftImageWidth; -ko-max-width: @[leftImageWidth]px; -ko-attr-alt: @leftImage.alt;
-                                          -ko-attr-padding-top: @[leftImage.paddingTop]px; -ko-attr-padding-right: @[leftImage.paddingRight]px; -ko-attr-padding-bottom: @[leftImage.paddingBottom]px; -ko-attr-padding-left: @[leftImage.paddingLeft]px;">
-                                        </a>
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr data-ko-display="leftFirstPosSelect eq 'img'">
+                                            <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftFirstImage.paddingTop]px @[leftFirstImage.paddingRight]px @[leftFirstImage.paddingBottom]px @[leftFirstImage.paddingLeft]px;">
+                                              <a data-ko-link="leftFirstImage.url" href="">
+                                                <img data-ko-editable="leftFirstImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
+                                                -ko-attr-width: @leftFirstImageWidth; -ko-max-width: @[leftFirstImageWidth]px; -ko-attr-alt: @leftFirstImage.alt;">
+                                              </a>
+                                            </th>
+                                          </tr>
+                                        </table>
                                       </center>
                                     </div>
-                                    <div data-ko-editable="leftTitleLongText" data-ko-display="leftTitleVisible" class="text-center"
-                                    style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:24px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:center;word-wrap:normal;
-                                    -ko-font-size: @[leftTitleTextStyle.size]px; -ko-font-family: @leftTitleTextStyle.face; -ko-color: @leftTitleTextStyle.color;">
-                                      <h3>
-                                        It's Never Been Easier to Do Things.
-                                      </h3>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="leftSecondPosSelect eq 'title'">
+                                        <td data-ko-editable="leftSecondTitleLongText" style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:24px;font-weight:400;padding:0;line-height:1.3;margin:0;margin-bottom:10px;text-align:left;word-wrap:normal;
+                                        -ko-font-size: @[leftSecondTitleTextStyle.size]px; -ko-font-family: @leftSecondTitleTextStyle.face; -ko-color: @leftSecondTitleTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[leftSecondTitleTextStyle.paddingTop]px @[leftSecondTitleTextStyle.paddingRight]px @[leftSecondTitleTextStyle.paddingBottom]px @[leftSecondTitleTextStyle.paddingLeft]px;">
+                                          <h2>
+                                            This is a title
+                                          </h2>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="leftSecondPosSelect eq 'txt'">
+                                        <td data-ko-editable="leftSecondCopyLongText" style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left;
+                                        -ko-font-size: @[leftSecondCopyTextStyle.size]px; -ko-font-family: @leftSecondCopyTextStyle.face; -ko-color: @leftSecondCopyTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[leftSecondCopyTextStyle.paddingTop]px @[leftSecondCopyTextStyle.paddingRight]px @[leftSecondCopyTextStyle.paddingBottom]px @[leftSecondCopyTextStyle.paddingLeft]px;">
+                                          <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table data-ko-display="leftSecondPosSelect eq 'btn'" class="button large secondary" style="Margin:0 0 16px 0;border-collapse:collapse;border-spacing:0;margin:0 0 16px 0;padding:0;text-align:left;vertical-align:top;width:auto">
+                                      <tr style="padding:0;text-align:left;vertical-align:top">
+                                        <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                          <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                            <tr style="padding:0;text-align:center;vertical-align:top">
+                                              <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;bgcolor:#2299e8;background:#2299e8;background-color:#2299e8;border:0 solid #2299e8;border-collapse:collapse!important;color:#fefefe;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;
+                                              -ko-attr-bgcolor: @leftSecondButtonStyle.buttonColor; -ko-background-color: @leftSecondButtonStyle.buttonColor;">
+                                                <a data-ko-editable="leftSecondButtonLink.text" href="#" style="Margin:0;border:0 solid #2299e8;border-color: #2299e8;border-radius:3px;color:#fefefe;display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;line-height:1.3;margin:0;padding:10px 20px 10px 20px;text-align:left;text-decoration:none;
+                                                -ko-border-radius: @[leftSecondButtonStyle.radius]px; -ko-color: @leftSecondButtonStyle.color; -ko-font-size: @[leftSecondButtonStyle.size]px;
+                                                -ko-font-family: @leftSecondButtonStyle.face; -ko-attr-href: @leftSecondButtonLink.url; -ko-border-color: @leftSecondButtonStyle.buttonColor;
+                                                -padding:10px 20px 10px 20px;-ko-padding: @[leftSecondButtonStyle.paddingVert]px @[leftSecondButtonStyle.paddingHoriz]px @[leftSecondButtonStyle.paddingVert]px @[leftSecondButtonStyle.paddingHoriz]px;">
+                                                  Click Me!
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <div data-ko-display="leftSecondPosSelect eq 'img'">
+                                      <center data-parsed="" style="min-width:145.33px;width:100%">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr data-ko-display="leftSecondPosSelect eq 'img'">
+                                            <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftSecondImage.paddingTop]px @[leftSecondImage.paddingRight]px @[leftSecondImage.paddingBottom]px @[leftSecondImage.paddingLeft]px;">
+                                              <a data-ko-link="leftSecondImage.url" href="">
+                                                <img data-ko-editable="leftSecondImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
+                                                -ko-attr-width: @leftSecondImageWidth; -ko-max-width: @[leftSecondImageWidth]px; -ko-attr-alt: @leftSecondImage.alt;">
+                                              </a>
+                                            </th>
+                                          </tr>
+                                        </table>
+                                      </center>
                                     </div>
-                                    <div data-ko-editable="leftLongText" data-ko-display="leftTextVisible" class="text-center"
-                                    style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:center;
-                                    -ko-font-size: @[leftTextStyle.size]px; -ko-font-family: @leftTextStyle.face; -ko-color: @leftTextStyle.color;">
-                                      <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                      </p>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="leftThirdPosSelect eq 'title'">
+                                        <td data-ko-editable="leftThirdTitleLongText" style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:24px;font-weight:400;padding:0;line-height:1.3;margin:0;margin-bottom:10px;text-align:left;word-wrap:normal;
+                                        -ko-font-size: @[leftThirdTitleTextStyle.size]px; -ko-font-family: @leftThirdTitleTextStyle.face; -ko-color: @leftThirdTitleTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[leftThirdTitleTextStyle.paddingTop]px @[leftThirdTitleTextStyle.paddingRight]px @[leftThirdTitleTextStyle.paddingBottom]px @[leftThirdTitleTextStyle.paddingLeft]px;">
+                                          <h2>
+                                            This is a title
+                                          </h2>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="leftThirdPosSelect eq 'txt'">
+                                        <td data-ko-editable="leftThirdCopyLongText" style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left;
+                                        -ko-font-size: @[leftThirdCopyTextStyle.size]px; -ko-font-family: @leftThirdCopyTextStyle.face; -ko-color: @leftThirdCopyTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[leftThirdCopyTextStyle.paddingTop]px @[leftThirdCopyTextStyle.paddingRight]px @[leftThirdCopyTextStyle.paddingBottom]px @[leftThirdCopyTextStyle.paddingLeft]px;">
+                                          <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table data-ko-display="leftThirdPosSelect eq 'btn'" class="button large secondary" style="Margin:0 0 16px 0;border-collapse:collapse;border-spacing:0;margin:0 0 16px 0;padding:0;text-align:left;vertical-align:top;width:auto">
+                                      <tr style="padding:0;text-align:left;vertical-align:top">
+                                        <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                          <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                            <tr style="padding:0;text-align:center;vertical-align:top">
+                                              <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;bgcolor:#2299e8;background:#2299e8;background-color:#2299e8;border:0 solid #2299e8;border-collapse:collapse!important;color:#fefefe;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;
+                                              -ko-attr-bgcolor: @leftThirdButtonStyle.buttonColor; -ko-background-color: @leftThirdButtonStyle.buttonColor;">
+                                                <a data-ko-editable="leftThirdButtonLink.text" href="#" style="Margin:0;border:0 solid #2299e8;border-color: #2299e8;border-radius:3px;color:#fefefe;display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;line-height:1.3;margin:0;padding:10px 20px 10px 20px;text-align:left;text-decoration:none;
+                                                -ko-border-radius: @[leftThirdButtonStyle.radius]px; -ko-color: @leftThirdButtonStyle.color; -ko-font-size: @[leftThirdButtonStyle.size]px;
+                                                -ko-font-family: @leftThirdButtonStyle.face; -ko-attr-href: @leftThirdButtonLink.url; -ko-border-color: @leftThirdButtonStyle.buttonColor;
+                                                -padding:10px 20px 10px 20px;-ko-padding: @[leftThirdButtonStyle.paddingVert]px @[leftThirdButtonStyle.paddingHoriz]px @[leftThirdButtonStyle.paddingVert]px @[leftThirdButtonStyle.paddingHoriz]px;">
+                                                  Click Me!
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <div data-ko-display="leftThirdPosSelect eq 'img'">
+                                      <center data-parsed="" style="min-width:145.33px;width:100%">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr data-ko-display="leftThirdPosSelect eq 'img'">
+                                            <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftThirdImage.paddingTop]px @[leftThirdImage.paddingRight]px @[leftThirdImage.paddingBottom]px @[leftThirdImage.paddingLeft]px;">
+                                              <a data-ko-link="leftThirdImage.url" href="">
+                                                <img data-ko-editable="leftThirdImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
+                                                -ko-attr-width: @leftThirdImageWidth; -ko-max-width: @[leftThirdImageWidth]px; -ko-attr-alt: @leftThirdImage.alt;">
+                                              </a>
+                                            </th>
+                                          </tr>
+                                        </table>
+                                      </center>
                                     </div>
-                                    <center data-parsed="" style="min-width:145.33px;width:100%">
-                                      <table data-ko-display="leftButtonVisible" class="button large secondary text-center" style="Margin:0 0 16px 0;border-collapse:collapse;border-spacing:0;margin:0 0 16px 0;padding:0;text-align:left;vertical-align:top;width:auto">
-                                        <tr style="padding:0;text-align:left;vertical-align:top">
-                                          <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
-                                            <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
-                                              <tr style="padding:0;text-align:center;vertical-align:top">
-                                                <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;bgcolor:#2299e8;background:#2299e8;background-color:#2299e8;border:0 solid #2299e8;border-collapse:collapse!important;color:#fefefe;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;
-                                                -ko-attr-bgcolor: @leftButtonStyle.buttonColor; -ko-background-color: @leftButtonStyle.buttonColor;">
-                                                  <a data-ko-editable="leftButtonLink.text" href="#" style="Margin:0;border:0 solid #2299e8;border-color: #2299e8;border-radius:3px;color:#fefefe;display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;line-height:1.3;margin:0;padding:10px 20px 10px 20px;text-align:left;text-decoration:none;
-                                                  -ko-border-radius: @[leftButtonStyle.radius]px; -ko-color: @leftButtonStyle.color; -ko-font-size: @[leftButtonStyle.size]px;
-                                                  -ko-font-family: @leftButtonStyle.face; -ko-attr-href: @leftButtonLink.url; -ko-border-color: @leftButtonStyle.buttonColor;">
-                                                    Click Me!
-                                                  </a>
-                                                </td>
-                                              </tr>
-                                            </table>
-                                          </td>
-                                        </tr>
-                                      </table>
-                                    </center>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="leftFourthPosSelect eq 'title'">
+                                        <td data-ko-editable="leftFourthTitleLongText" style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:24px;font-weight:400;padding:0;line-height:1.3;margin:0;margin-bottom:10px;text-align:left;word-wrap:normal;
+                                        -ko-font-size: @[leftFourthTitleTextStyle.size]px; -ko-font-family: @leftFourthTitleTextStyle.face; -ko-color: @leftFourthTitleTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[leftFourthTitleTextStyle.paddingTop]px @[leftFourthTitleTextStyle.paddingRight]px @[leftFourthTitleTextStyle.paddingBottom]px @[leftFourthTitleTextStyle.paddingLeft]px;">
+                                          <h2>
+                                            This is a title
+                                          </h2>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="leftFourthPosSelect eq 'txt'">
+                                        <td data-ko-editable="leftFourthCopyLongText" style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left;
+                                        -ko-font-size: @[leftFourthCopyTextStyle.size]px; -ko-font-family: @leftFourthCopyTextStyle.face; -ko-color: @leftFourthCopyTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[leftFourthCopyTextStyle.paddingTop]px @[leftFourthCopyTextStyle.paddingRight]px @[leftFourthCopyTextStyle.paddingBottom]px @[leftFourthCopyTextStyle.paddingLeft]px;">
+                                          <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table data-ko-display="leftFourthPosSelect eq 'btn'" class="button large secondary" style="Margin:0 0 16px 0;border-collapse:collapse;border-spacing:0;margin:0 0 16px 0;padding:0;text-align:left;vertical-align:top;width:auto">
+                                      <tr style="padding:0;text-align:left;vertical-align:top">
+                                        <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                          <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                            <tr style="padding:0;text-align:center;vertical-align:top">
+                                              <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;bgcolor:#2299e8;background:#2299e8;background-color:#2299e8;border:0 solid #2299e8;border-collapse:collapse!important;color:#fefefe;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;
+                                              -ko-attr-bgcolor: @leftFourthButtonStyle.buttonColor; -ko-background-color: @leftFourthButtonStyle.buttonColor;">
+                                                <a data-ko-editable="leftFourthButtonLink.text" href="#" style="Margin:0;border:0 solid #2299e8;border-color: #2299e8;border-radius:3px;color:#fefefe;display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;line-height:1.3;margin:0;padding:10px 20px 10px 20px;text-align:left;text-decoration:none;
+                                                -ko-border-radius: @[leftFourthButtonStyle.radius]px; -ko-color: @leftFourthButtonStyle.color; -ko-font-size: @[leftFourthButtonStyle.size]px;
+                                                -ko-font-family: @leftFourthButtonStyle.face; -ko-attr-href: @leftFourthButtonLink.url; -ko-border-color: @leftFourthButtonStyle.buttonColor;
+                                                -padding:10px 20px 10px 20px;-ko-padding: @[leftFourthButtonStyle.paddingVert]px @[leftFourthButtonStyle.paddingHoriz]px @[leftFourthButtonStyle.paddingVert]px @[leftFourthButtonStyle.paddingHoriz]px;">
+                                                  Click Me!
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <div data-ko-display="leftFourthPosSelect eq 'img'">
+                                      <center data-parsed="" style="min-width:145.33px;width:100%">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr data-ko-display="leftFourthPosSelect eq 'img'">
+                                            <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftFourthImage.paddingTop]px @[leftFourthImage.paddingRight]px @[leftFourthImage.paddingBottom]px @[leftFourthImage.paddingLeft]px;">
+                                              <a data-ko-link="leftFourthImage.url" href="">
+                                                <img data-ko-editable="leftFourthImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
+                                                -ko-attr-width: @leftFourthImageWidth; -ko-max-width: @[leftFourthImageWidth]px; -ko-attr-alt: @leftFourthImage.alt;">
+                                              </a>
+                                            </th>
+                                          </tr>
+                                        </table>
+                                      </center>
+                                    </div>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="leftFifthPosSelect eq 'title'">
+                                        <td data-ko-editable="leftFifthTitleLongText" style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:24px;font-weight:400;padding:0;line-height:1.3;margin:0;margin-bottom:10px;text-align:left;word-wrap:normal;
+                                        -ko-font-size: @[leftFifthTitleTextStyle.size]px; -ko-font-family: @leftFifthTitleTextStyle.face; -ko-color: @leftFifthTitleTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[leftFifthTitleTextStyle.paddingTop]px @[leftFifthTitleTextStyle.paddingRight]px @[leftFifthTitleTextStyle.paddingBottom]px @[leftFifthTitleTextStyle.paddingLeft]px;">
+                                          <h2>
+                                            This is a title
+                                          </h2>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="leftFifthPosSelect eq 'txt'">
+                                        <td data-ko-editable="leftFifthCopyLongText" style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left;
+                                        -ko-font-size: @[leftFifthCopyTextStyle.size]px; -ko-font-family: @leftFifthCopyTextStyle.face; -ko-color: @leftFifthCopyTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[leftFifthCopyTextStyle.paddingTop]px @[leftFifthCopyTextStyle.paddingRight]px @[leftFifthCopyTextStyle.paddingBottom]px @[leftFifthCopyTextStyle.paddingLeft]px;">
+                                          <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table data-ko-display="leftFifthPosSelect eq 'btn'" class="button large secondary" style="Margin:0 0 16px 0;border-collapse:collapse;border-spacing:0;margin:0 0 16px 0;padding:0;text-align:left;vertical-align:top;width:auto">
+                                      <tr style="padding:0;text-align:left;vertical-align:top">
+                                        <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                          <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                            <tr style="padding:0;text-align:center;vertical-align:top">
+                                              <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;bgcolor:#2299e8;background:#2299e8;background-color:#2299e8;border:0 solid #2299e8;border-collapse:collapse!important;color:#fefefe;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;
+                                              -ko-attr-bgcolor: @leftFifthButtonStyle.buttonColor; -ko-background-color: @leftFifthButtonStyle.buttonColor;">
+                                                <a data-ko-editable="leftFifthButtonLink.text" href="#" style="Margin:0;border:0 solid #2299e8;border-color: #2299e8;border-radius:3px;color:#fefefe;display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;line-height:1.3;margin:0;padding:10px 20px 10px 20px;text-align:left;text-decoration:none;
+                                                -ko-border-radius: @[leftFifthButtonStyle.radius]px; -ko-color: @leftFifthButtonStyle.color; -ko-font-size: @[leftFifthButtonStyle.size]px;
+                                                -ko-font-family: @leftFifthButtonStyle.face; -ko-attr-href: @leftFifthButtonLink.url; -ko-border-color: @leftFifthButtonStyle.buttonColor;
+                                                -padding:10px 20px 10px 20px;-ko-padding: @[leftFifthButtonStyle.paddingVert]px @[leftFifthButtonStyle.paddingHoriz]px @[leftFifthButtonStyle.paddingVert]px @[leftFifthButtonStyle.paddingHoriz]px;">
+                                                  Click Me!
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <div data-ko-display="leftFifthPosSelect eq 'img'">
+                                      <center data-parsed="" style="min-width:145.33px;width:100%">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr data-ko-display="leftFifthPosSelect eq 'img'">
+                                            <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftFifthImage.paddingTop]px @[leftFifthImage.paddingRight]px @[leftFifthImage.paddingBottom]px @[leftFifthImage.paddingLeft]px;">
+                                              <a data-ko-link="leftFifthImage.url" href="">
+                                                <img data-ko-editable="leftFifthImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
+                                                -ko-attr-width: @leftFifthImageWidth; -ko-max-width: @[leftFifthImageWidth]px; -ko-attr-alt: @leftFifthImage.alt;">
+                                              </a>
+                                            </th>
+                                          </tr>
+                                        </table>
+                                      </center>
+                                    </div>
                                   </th>
                                 </tr>
                               </table>
@@ -2345,50 +2640,286 @@
                               <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
                                 <tr style="padding:0;text-align:left;vertical-align:top">
                                   <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
-                                    <div data-ko-display="centerImageVisible">
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="centerFirstPosSelect eq 'title'">
+                                        <td data-ko-editable="centerFirstTitleLongText" style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:24px;font-weight:400;padding:0;line-height:1.3;margin:0;margin-bottom:10px;text-align:left;word-wrap:normal;
+                                        -ko-font-size: @[centerFirstTitleTextStyle.size]px; -ko-font-family: @centerFirstTitleTextStyle.face; -ko-color: @centerFirstTitleTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[centerFirstTitleTextStyle.paddingTop]px @[centerFirstTitleTextStyle.paddingRight]px @[centerFirstTitleTextStyle.paddingBottom]px @[centerFirstTitleTextStyle.paddingLeft]px;">
+                                          <h2>
+                                            This is a title
+                                          </h2>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="centerFirstPosSelect eq 'txt'">
+                                        <td data-ko-editable="centerFirstCopyLongText" style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left;
+                                        -ko-font-size: @[centerFirstCopyTextStyle.size]px; -ko-font-family: @centerFirstCopyTextStyle.face; -ko-color: @centerFirstCopyTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[centerFirstCopyTextStyle.paddingTop]px @[centerFirstCopyTextStyle.paddingRight]px @[centerFirstCopyTextStyle.paddingBottom]px @[centerFirstCopyTextStyle.paddingLeft]px;">
+                                          <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table data-ko-display="centerFirstPosSelect eq 'btn'" class="button large secondary" style="Margin:0 0 16px 0;border-collapse:collapse;border-spacing:0;margin:0 0 16px 0;padding:0;text-align:left;vertical-align:top;width:auto">
+                                      <tr style="padding:0;text-align:left;vertical-align:top">
+                                        <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                          <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                            <tr style="padding:0;text-align:center;vertical-align:top">
+                                              <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;bgcolor:#2299e8;background:#2299e8;background-color:#2299e8;border:0 solid #2299e8;border-collapse:collapse!important;color:#fefefe;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;
+                                              -ko-attr-bgcolor: @centerFirstButtonStyle.buttonColor; -ko-background-color: @centerFirstButtonStyle.buttonColor;">
+                                                <a data-ko-editable="centerFirstButtonLink.text" href="#" style="Margin:0;border:0 solid #2299e8;border-color: #2299e8;border-radius:3px;color:#fefefe;display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;line-height:1.3;margin:0;padding:10px 20px 10px 20px;text-align:left;text-decoration:none;
+                                                -ko-border-radius: @[centerFirstButtonStyle.radius]px; -ko-color: @centerFirstButtonStyle.color; -ko-font-size: @[centerFirstButtonStyle.size]px;
+                                                -ko-font-family: @centerFirstButtonStyle.face; -ko-attr-href: @centerFirstButtonLink.url; -ko-border-color: @centerFirstButtonStyle.buttonColor;
+                                                -padding:10px 20px 10px 20px;-ko-padding: @[centerFirstButtonStyle.paddingVert]px @[centerFirstButtonStyle.paddingHoriz]px @[centerFirstButtonStyle.paddingVert]px @[centerFirstButtonStyle.paddingHoriz]px;">
+                                                  Click Me!
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <div data-ko-display="centerFirstPosSelect eq 'img'">
                                       <center data-parsed="" style="min-width:145.33px;width:100%">
-                                        <a data-ko-link="centerImage.url" href="">
-                                          <img data-ko-editable="centerImage.src" data-ko-placeholder-height="125" src="http://placehold.it/50x50" align="center"
-                                          class="float-center" alt="" width="125" style="-ms-interpolation-mode:bicubic;Margin:0 auto;clear:both;display:block;float:none;margin:0 auto;max-width:125px;outline:0;text-align:center;text-decoration:none;width:125;
-                                          -ko-attr-width: @centerImageWidth; -ko-max-width: @[centerImageWidth]px; -ko-attr-alt: @centerImage.alt;
-                                          -ko-attr-padding-top: @[centerImage.paddingTop]px; -ko-attr-padding-right: @[centerImage.paddingRight]px; -ko-attr-padding-bottom: @[centerImage.paddingBottom]px; -ko-attr-padding-left: @[centerImage.paddingLeft]px;">
-                                        </a>
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr data-ko-display="centerFirstPosSelect eq 'img'">
+                                            <th style="padding: 0px 0px 0px 0px; -ko-padding: @[centerFirstImage.paddingTop]px @[centerFirstImage.paddingRight]px @[centerFirstImage.paddingBottom]px @[centerFirstImage.paddingLeft]px;">
+                                              <a data-ko-link="centerFirstImage.url" href="">
+                                                <img data-ko-editable="centerFirstImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
+                                                -ko-attr-width: @centerFirstImageWidth; -ko-max-width: @[centerFirstImageWidth]px; -ko-attr-alt: @centerFirstImage.alt;">
+                                              </a>
+                                            </th>
+                                          </tr>
+                                        </table>
                                       </center>
                                     </div>
-                                    <div data-ko-editable="centerTitleLongText" data-ko-display="centerTitleVisible" class="text-center"
-                                    style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:24px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:center;word-wrap:normal;
-                                    -ko-font-size: @[centerTitleTextStyle.size]px; -ko-font-family: @centerTitleTextStyle.face; -ko-color: @centerTitleTextStyle.color;">
-                                      <h3>
-                                        It's Never Been Easier to Do Things.
-                                      </h3>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="centerSecondPosSelect eq 'title'">
+                                        <td data-ko-editable="centerSecondTitleLongText" style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:24px;font-weight:400;padding:0;line-height:1.3;margin:0;margin-bottom:10px;text-align:left;word-wrap:normal;
+                                        -ko-font-size: @[centerSecondTitleTextStyle.size]px; -ko-font-family: @centerSecondTitleTextStyle.face; -ko-color: @centerSecondTitleTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[centerSecondTitleTextStyle.paddingTop]px @[centerSecondTitleTextStyle.paddingRight]px @[centerSecondTitleTextStyle.paddingBottom]px @[centerSecondTitleTextStyle.paddingLeft]px;">
+                                          <h2>
+                                            This is a title
+                                          </h2>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="centerSecondPosSelect eq 'txt'">
+                                        <td data-ko-editable="centerSecondCopyLongText" style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left;
+                                        -ko-font-size: @[centerSecondCopyTextStyle.size]px; -ko-font-family: @centerSecondCopyTextStyle.face; -ko-color: @centerSecondCopyTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[centerSecondCopyTextStyle.paddingTop]px @[centerSecondCopyTextStyle.paddingRight]px @[centerSecondCopyTextStyle.paddingBottom]px @[centerSecondCopyTextStyle.paddingLeft]px;">
+                                          <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table data-ko-display="centerSecondPosSelect eq 'btn'" class="button large secondary" style="Margin:0 0 16px 0;border-collapse:collapse;border-spacing:0;margin:0 0 16px 0;padding:0;text-align:left;vertical-align:top;width:auto">
+                                      <tr style="padding:0;text-align:left;vertical-align:top">
+                                        <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                          <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                            <tr style="padding:0;text-align:center;vertical-align:top">
+                                              <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;bgcolor:#2299e8;background:#2299e8;background-color:#2299e8;border:0 solid #2299e8;border-collapse:collapse!important;color:#fefefe;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;
+                                              -ko-attr-bgcolor: @centerSecondButtonStyle.buttonColor; -ko-background-color: @centerSecondButtonStyle.buttonColor;">
+                                                <a data-ko-editable="centerSecondButtonLink.text" href="#" style="Margin:0;border:0 solid #2299e8;border-color: #2299e8;border-radius:3px;color:#fefefe;display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;line-height:1.3;margin:0;padding:10px 20px 10px 20px;text-align:left;text-decoration:none;
+                                                -ko-border-radius: @[centerSecondButtonStyle.radius]px; -ko-color: @centerSecondButtonStyle.color; -ko-font-size: @[centerSecondButtonStyle.size]px;
+                                                -ko-font-family: @centerSecondButtonStyle.face; -ko-attr-href: @centerSecondButtonLink.url; -ko-border-color: @centerSecondButtonStyle.buttonColor;
+                                                -padding:10px 20px 10px 20px;-ko-padding: @[centerSecondButtonStyle.paddingVert]px @[centerSecondButtonStyle.paddingHoriz]px @[centerSecondButtonStyle.paddingVert]px @[centerSecondButtonStyle.paddingHoriz]px;">
+                                                  Click Me!
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <div data-ko-display="centerSecondPosSelect eq 'img'">
+                                      <center data-parsed="" style="min-width:145.33px;width:100%">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr data-ko-display="centerSecondPosSelect eq 'img'">
+                                            <th style="padding: 0px 0px 0px 0px; -ko-padding: @[centerSecondImage.paddingTop]px @[centerSecondImage.paddingRight]px @[centerSecondImage.paddingBottom]px @[centerSecondImage.paddingLeft]px;">
+                                              <a data-ko-link="centerSecondImage.url" href="">
+                                                <img data-ko-editable="centerSecondImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
+                                                -ko-attr-width: @centerSecondImageWidth; -ko-max-width: @[centerSecondImageWidth]px; -ko-attr-alt: @centerSecondImage.alt;">
+                                              </a>
+                                            </th>
+                                          </tr>
+                                        </table>
+                                      </center>
                                     </div>
-                                    <div data-ko-editable="centerLongText" data-ko-display="centerTextVisible" class="text-center"
-                                    style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:center;
-                                    -ko-font-size: @[centerTextStyle.size]px; -ko-font-family: @centerTextStyle.face; -ko-color: @centerTextStyle.color;">
-                                      <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                      </p>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="centerThirdPosSelect eq 'title'">
+                                        <td data-ko-editable="centerThirdTitleLongText" style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:24px;font-weight:400;padding:0;line-height:1.3;margin:0;margin-bottom:10px;text-align:left;word-wrap:normal;
+                                        -ko-font-size: @[centerThirdTitleTextStyle.size]px; -ko-font-family: @centerThirdTitleTextStyle.face; -ko-color: @centerThirdTitleTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[centerThirdTitleTextStyle.paddingTop]px @[centerThirdTitleTextStyle.paddingRight]px @[centerThirdTitleTextStyle.paddingBottom]px @[centerThirdTitleTextStyle.paddingLeft]px;">
+                                          <h2>
+                                            This is a title
+                                          </h2>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="centerThirdPosSelect eq 'txt'">
+                                        <td data-ko-editable="centerThirdCopyLongText" style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left;
+                                        -ko-font-size: @[centerThirdCopyTextStyle.size]px; -ko-font-family: @centerThirdCopyTextStyle.face; -ko-color: @centerThirdCopyTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[centerThirdCopyTextStyle.paddingTop]px @[centerThirdCopyTextStyle.paddingRight]px @[centerThirdCopyTextStyle.paddingBottom]px @[centerThirdCopyTextStyle.paddingLeft]px;">
+                                          <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table data-ko-display="centerThirdPosSelect eq 'btn'" class="button large secondary" style="Margin:0 0 16px 0;border-collapse:collapse;border-spacing:0;margin:0 0 16px 0;padding:0;text-align:left;vertical-align:top;width:auto">
+                                      <tr style="padding:0;text-align:left;vertical-align:top">
+                                        <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                          <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                            <tr style="padding:0;text-align:center;vertical-align:top">
+                                              <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;bgcolor:#2299e8;background:#2299e8;background-color:#2299e8;border:0 solid #2299e8;border-collapse:collapse!important;color:#fefefe;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;
+                                              -ko-attr-bgcolor: @centerThirdButtonStyle.buttonColor; -ko-background-color: @centerThirdButtonStyle.buttonColor;">
+                                                <a data-ko-editable="centerThirdButtonLink.text" href="#" style="Margin:0;border:0 solid #2299e8;border-color: #2299e8;border-radius:3px;color:#fefefe;display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;line-height:1.3;margin:0;padding:10px 20px 10px 20px;text-align:left;text-decoration:none;
+                                                -ko-border-radius: @[centerThirdButtonStyle.radius]px; -ko-color: @centerThirdButtonStyle.color; -ko-font-size: @[centerThirdButtonStyle.size]px;
+                                                -ko-font-family: @centerThirdButtonStyle.face; -ko-attr-href: @centerThirdButtonLink.url; -ko-border-color: @centerThirdButtonStyle.buttonColor;
+                                                -padding:10px 20px 10px 20px;-ko-padding: @[centerThirdButtonStyle.paddingVert]px @[centerThirdButtonStyle.paddingHoriz]px @[centerThirdButtonStyle.paddingVert]px @[centerThirdButtonStyle.paddingHoriz]px;">
+                                                  Click Me!
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <div data-ko-display="centerThirdPosSelect eq 'img'">
+                                      <center data-parsed="" style="min-width:145.33px;width:100%">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr data-ko-display="centerThirdPosSelect eq 'img'">
+                                            <th style="padding: 0px 0px 0px 0px; -ko-padding: @[centerThirdImage.paddingTop]px @[centerThirdImage.paddingRight]px @[centerThirdImage.paddingBottom]px @[centerThirdImage.paddingLeft]px;">
+                                              <a data-ko-link="centerThirdImage.url" href="">
+                                                <img data-ko-editable="centerThirdImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
+                                                -ko-attr-width: @centerThirdImageWidth; -ko-max-width: @[centerThirdImageWidth]px; -ko-attr-alt: @centerThirdImage.alt;">
+                                              </a>
+                                            </th>
+                                          </tr>
+                                        </table>
+                                      </center>
                                     </div>
-                                    <center data-parsed="" style="min-width:145.33px;width:100%">
-                                      <table data-ko-display="centerButtonVisible" class="button large secondary" style="Margin:0 0 16px 0;border-collapse:collapse;border-spacing:0;margin:0 0 16px 0;padding:0;text-align:left;vertical-align:top;width:auto">
-                                        <tr style="padding:0;text-align:left;vertical-align:top">
-                                          <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
-                                            <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
-                                              <tr style="padding:0;text-align:left;vertical-align:top">
-                                                <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;bgcolor:#2299e8;background:#2299e8;background-color:#2299e8;border:0 solid #2299e8;border-collapse:collapse!important;color:#fefefe;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;
-                                                -ko-attr-bgcolor: @centerButtonStyle.buttonColor; -ko-background-color: @centerButtonStyle.buttonColor;">
-                                                  <a data-ko-editable="centerButtonLink.text" href="#" style="Margin:0;border:0 solid #2299e8;border-color: #2299e8;border-radius:3px;color:#fefefe;display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;line-height:1.3;margin:0;padding:10px 20px 10px 20px;text-align:left;text-decoration:none;
-                                                  -ko-border-radius: @[centerButtonStyle.radius]px; -ko-color: @centerButtonStyle.color; -ko-font-size: @[centerButtonStyle.size]px;
-                                                  -ko-font-family: @centerButtonStyle.face; -ko-attr-href: @centerButtonLink.url; -ko-border-color: @centerButtonStyle.buttonColor;">
-                                                    Click Me!
-                                                  </a>
-                                                </td>
-                                              </tr>
-                                            </table>
-                                          </td>
-                                        </tr>
-                                      </table>
-                                    </center>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="centerFourthPosSelect eq 'title'">
+                                        <td data-ko-editable="centerFourthTitleLongText" style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:24px;font-weight:400;padding:0;line-height:1.3;margin:0;margin-bottom:10px;text-align:left;word-wrap:normal;
+                                        -ko-font-size: @[centerFourthTitleTextStyle.size]px; -ko-font-family: @centerFourthTitleTextStyle.face; -ko-color: @centerFourthTitleTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[centerFourthTitleTextStyle.paddingTop]px @[centerFourthTitleTextStyle.paddingRight]px @[centerFourthTitleTextStyle.paddingBottom]px @[centerFourthTitleTextStyle.paddingLeft]px;">
+                                          <h2>
+                                            This is a title
+                                          </h2>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="centerFourthPosSelect eq 'txt'">
+                                        <td data-ko-editable="centerFourthCopyLongText" style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left;
+                                        -ko-font-size: @[centerFourthCopyTextStyle.size]px; -ko-font-family: @centerFourthCopyTextStyle.face; -ko-color: @centerFourthCopyTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[centerFourthCopyTextStyle.paddingTop]px @[centerFourthCopyTextStyle.paddingRight]px @[centerFourthCopyTextStyle.paddingBottom]px @[centerFourthCopyTextStyle.paddingLeft]px;">
+                                          <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table data-ko-display="centerFourthPosSelect eq 'btn'" class="button large secondary" style="Margin:0 0 16px 0;border-collapse:collapse;border-spacing:0;margin:0 0 16px 0;padding:0;text-align:left;vertical-align:top;width:auto">
+                                      <tr style="padding:0;text-align:left;vertical-align:top">
+                                        <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                          <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                            <tr style="padding:0;text-align:center;vertical-align:top">
+                                              <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;bgcolor:#2299e8;background:#2299e8;background-color:#2299e8;border:0 solid #2299e8;border-collapse:collapse!important;color:#fefefe;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;
+                                              -ko-attr-bgcolor: @centerFourthButtonStyle.buttonColor; -ko-background-color: @centerFourthButtonStyle.buttonColor;">
+                                                <a data-ko-editable="centerFourthButtonLink.text" href="#" style="Margin:0;border:0 solid #2299e8;border-color: #2299e8;border-radius:3px;color:#fefefe;display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;line-height:1.3;margin:0;padding:10px 20px 10px 20px;text-align:left;text-decoration:none;
+                                                -ko-border-radius: @[centerFourthButtonStyle.radius]px; -ko-color: @centerFourthButtonStyle.color; -ko-font-size: @[centerFourthButtonStyle.size]px;
+                                                -ko-font-family: @centerFourthButtonStyle.face; -ko-attr-href: @centerFourthButtonLink.url; -ko-border-color: @centerFourthButtonStyle.buttonColor;
+                                                -padding:10px 20px 10px 20px;-ko-padding: @[centerFourthButtonStyle.paddingVert]px @[centerFourthButtonStyle.paddingHoriz]px @[centerFourthButtonStyle.paddingVert]px @[centerFourthButtonStyle.paddingHoriz]px;">
+                                                  Click Me!
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <div data-ko-display="centerFourthPosSelect eq 'img'">
+                                      <center data-parsed="" style="min-width:145.33px;width:100%">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr data-ko-display="centerFourthPosSelect eq 'img'">
+                                            <th style="padding: 0px 0px 0px 0px; -ko-padding: @[centerFourthImage.paddingTop]px @[centerFourthImage.paddingRight]px @[centerFourthImage.paddingBottom]px @[centerFourthImage.paddingLeft]px;">
+                                              <a data-ko-link="centerFourthImage.url" href="">
+                                                <img data-ko-editable="centerFourthImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
+                                                -ko-attr-width: @centerFourthImageWidth; -ko-max-width: @[centerFourthImageWidth]px; -ko-attr-alt: @centerFourthImage.alt;">
+                                              </a>
+                                            </th>
+                                          </tr>
+                                        </table>
+                                      </center>
+                                    </div>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="centerFifthPosSelect eq 'title'">
+                                        <td data-ko-editable="centerFifthTitleLongText" style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:24px;font-weight:400;padding:0;line-height:1.3;margin:0;margin-bottom:10px;text-align:left;word-wrap:normal;
+                                        -ko-font-size: @[centerFifthTitleTextStyle.size]px; -ko-font-family: @centerFifthTitleTextStyle.face; -ko-color: @centerFifthTitleTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[centerFifthTitleTextStyle.paddingTop]px @[centerFifthTitleTextStyle.paddingRight]px @[centerFifthTitleTextStyle.paddingBottom]px @[centerFifthTitleTextStyle.paddingLeft]px;">
+                                          <h2>
+                                            This is a title
+                                          </h2>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="centerFifthPosSelect eq 'txt'">
+                                        <td data-ko-editable="centerFifthCopyLongText" style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left;
+                                        -ko-font-size: @[centerFifthCopyTextStyle.size]px; -ko-font-family: @centerFifthCopyTextStyle.face; -ko-color: @centerFifthCopyTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[centerFifthCopyTextStyle.paddingTop]px @[centerFifthCopyTextStyle.paddingRight]px @[centerFifthCopyTextStyle.paddingBottom]px @[centerFifthCopyTextStyle.paddingLeft]px;">
+                                          <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table data-ko-display="centerFifthPosSelect eq 'btn'" class="button large secondary" style="Margin:0 0 16px 0;border-collapse:collapse;border-spacing:0;margin:0 0 16px 0;padding:0;text-align:left;vertical-align:top;width:auto">
+                                      <tr style="padding:0;text-align:left;vertical-align:top">
+                                        <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                          <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                            <tr style="padding:0;text-align:center;vertical-align:top">
+                                              <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;bgcolor:#2299e8;background:#2299e8;background-color:#2299e8;border:0 solid #2299e8;border-collapse:collapse!important;color:#fefefe;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;
+                                              -ko-attr-bgcolor: @centerFifthButtonStyle.buttonColor; -ko-background-color: @centerFifthButtonStyle.buttonColor;">
+                                                <a data-ko-editable="centerFifthButtonLink.text" href="#" style="Margin:0;border:0 solid #2299e8;border-color: #2299e8;border-radius:3px;color:#fefefe;display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;line-height:1.3;margin:0;padding:10px 20px 10px 20px;text-align:left;text-decoration:none;
+                                                -ko-border-radius: @[centerFifthButtonStyle.radius]px; -ko-color: @centerFifthButtonStyle.color; -ko-font-size: @[centerFifthButtonStyle.size]px;
+                                                -ko-font-family: @centerFifthButtonStyle.face; -ko-attr-href: @centerFifthButtonLink.url; -ko-border-color: @centerFifthButtonStyle.buttonColor;
+                                                -padding:10px 20px 10px 20px;-ko-padding: @[centerFifthButtonStyle.paddingVert]px @[centerFifthButtonStyle.paddingHoriz]px @[centerFifthButtonStyle.paddingVert]px @[centerFifthButtonStyle.paddingHoriz]px;">
+                                                  Click Me!
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <div data-ko-display="centerFifthPosSelect eq 'img'">
+                                      <center data-parsed="" style="min-width:145.33px;width:100%">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr data-ko-display="centerFifthPosSelect eq 'img'">
+                                            <th style="padding: 0px 0px 0px 0px; -ko-padding: @[centerFifthImage.paddingTop]px @[centerFifthImage.paddingRight]px @[centerFifthImage.paddingBottom]px @[centerFifthImage.paddingLeft]px;">
+                                              <a data-ko-link="centerFifthImage.url" href="">
+                                                <img data-ko-editable="centerFifthImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
+                                                -ko-attr-width: @centerFifthImageWidth; -ko-max-width: @[centerFifthImageWidth]px; -ko-attr-alt: @centerFifthImage.alt;">
+                                              </a>
+                                            </th>
+                                          </tr>
+                                        </table>
+                                      </center>
+                                    </div>
                                   </th>
                                 </tr>
                               </table>
@@ -2397,50 +2928,286 @@
                               <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
                                 <tr style="padding:0;text-align:left;vertical-align:top">
                                   <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
-                                    <div data-ko-display="rightImageVisible">
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="rightFirstPosSelect eq 'title'">
+                                        <td data-ko-editable="rightFirstTitleLongText" style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:24px;font-weight:400;padding:0;line-height:1.3;margin:0;margin-bottom:10px;text-align:left;word-wrap:normal;
+                                        -ko-font-size: @[rightFirstTitleTextStyle.size]px; -ko-font-family: @rightFirstTitleTextStyle.face; -ko-color: @rightFirstTitleTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[rightFirstTitleTextStyle.paddingTop]px @[rightFirstTitleTextStyle.paddingRight]px @[rightFirstTitleTextStyle.paddingBottom]px @[rightFirstTitleTextStyle.paddingLeft]px;">
+                                          <h2>
+                                            This is a title
+                                          </h2>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="rightFirstPosSelect eq 'txt'">
+                                        <td data-ko-editable="rightFirstCopyLongText" style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left;
+                                        -ko-font-size: @[rightFirstCopyTextStyle.size]px; -ko-font-family: @rightFirstCopyTextStyle.face; -ko-color: @rightFirstCopyTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[rightFirstCopyTextStyle.paddingTop]px @[rightFirstCopyTextStyle.paddingRight]px @[rightFirstCopyTextStyle.paddingBottom]px @[rightFirstCopyTextStyle.paddingLeft]px;">
+                                          <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table data-ko-display="rightFirstPosSelect eq 'btn'" class="button large secondary" style="Margin:0 0 16px 0;border-collapse:collapse;border-spacing:0;margin:0 0 16px 0;padding:0;text-align:left;vertical-align:top;width:auto">
+                                      <tr style="padding:0;text-align:left;vertical-align:top">
+                                        <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                          <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                            <tr style="padding:0;text-align:center;vertical-align:top">
+                                              <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;bgcolor:#2299e8;background:#2299e8;background-color:#2299e8;border:0 solid #2299e8;border-collapse:collapse!important;color:#fefefe;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;
+                                              -ko-attr-bgcolor: @rightFirstButtonStyle.buttonColor; -ko-background-color: @rightFirstButtonStyle.buttonColor;">
+                                                <a data-ko-editable="rightFirstButtonLink.text" href="#" style="Margin:0;border:0 solid #2299e8;border-color: #2299e8;border-radius:3px;color:#fefefe;display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;line-height:1.3;margin:0;padding:10px 20px 10px 20px;text-align:left;text-decoration:none;
+                                                -ko-border-radius: @[rightFirstButtonStyle.radius]px; -ko-color: @rightFirstButtonStyle.color; -ko-font-size: @[rightFirstButtonStyle.size]px;
+                                                -ko-font-family: @rightFirstButtonStyle.face; -ko-attr-href: @rightFirstButtonLink.url; -ko-border-color: @rightFirstButtonStyle.buttonColor;
+                                                -padding:10px 20px 10px 20px;-ko-padding: @[rightFirstButtonStyle.paddingVert]px @[rightFirstButtonStyle.paddingHoriz]px @[rightFirstButtonStyle.paddingVert]px @[rightFirstButtonStyle.paddingHoriz]px;">
+                                                  Click Me!
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <div data-ko-display="rightFirstPosSelect eq 'img'">
                                       <center data-parsed="" style="min-width:145.33px;width:100%">
-                                        <a data-ko-link="rightImage.url" href="">
-                                          <img data-ko-editable="rightImage.src" data-ko-placeholder-height="125" src="http://placehold.it/50x50" align="center"
-                                          class="float-center" alt="" width="125" style="-ms-interpolation-mode:bicubic;Margin:0 auto;clear:both;display:block;float:none;margin:0 auto;max-width:125px;outline:0;text-align:center;text-decoration:none;width:125;
-                                          -ko-attr-width: @rightImageWidth; -ko-max-width: @[rightImageWidth]px; -ko-attr-alt: @rightImage.alt;
-                                          -ko-attr-padding-top: @[rightImage.paddingTop]px; -ko-attr-padding-right: @[rightImage.paddingRight]px; -ko-attr-padding-bottom: @[rightImage.paddingBottom]px; -ko-attr-padding-left: @[rightImage.paddingLeft]px;">
-                                        </a>
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr data-ko-display="rightFirstPosSelect eq 'img'">
+                                            <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightFirstImage.paddingTop]px @[rightFirstImage.paddingRight]px @[rightFirstImage.paddingBottom]px @[rightFirstImage.paddingLeft]px;">
+                                              <a data-ko-link="rightFirstImage.url" href="">
+                                                <img data-ko-editable="rightFirstImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
+                                                -ko-attr-width: @rightFirstImageWidth; -ko-max-width: @[rightFirstImageWidth]px; -ko-attr-alt: @rightFirstImage.alt;">
+                                              </a>
+                                            </th>
+                                          </tr>
+                                        </table>
                                       </center>
                                     </div>
-                                    <div data-ko-editable="rightTitleLongText" data-ko-display="rightTitleVisible" class="text-center"
-                                    style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:24px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:center;word-wrap:normal;
-                                    -ko-font-size: @[rightTitleTextStyle.size]px; -ko-font-family: @rightTitleTextStyle.face; -ko-color: @rightTitleTextStyle.color;">
-                                      <h3>
-                                        It's Never Been Easier to Do Things.
-                                      </h3>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="rightSecondPosSelect eq 'title'">
+                                        <td data-ko-editable="rightSecondTitleLongText" style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:24px;font-weight:400;padding:0;line-height:1.3;margin:0;margin-bottom:10px;text-align:left;word-wrap:normal;
+                                        -ko-font-size: @[rightSecondTitleTextStyle.size]px; -ko-font-family: @rightSecondTitleTextStyle.face; -ko-color: @rightSecondTitleTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[rightSecondTitleTextStyle.paddingTop]px @[rightSecondTitleTextStyle.paddingRight]px @[rightSecondTitleTextStyle.paddingBottom]px @[rightSecondTitleTextStyle.paddingLeft]px;">
+                                          <h2>
+                                            This is a title
+                                          </h2>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="rightSecondPosSelect eq 'txt'">
+                                        <td data-ko-editable="rightSecondCopyLongText" style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left;
+                                        -ko-font-size: @[rightSecondCopyTextStyle.size]px; -ko-font-family: @rightSecondCopyTextStyle.face; -ko-color: @rightSecondCopyTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[rightSecondCopyTextStyle.paddingTop]px @[rightSecondCopyTextStyle.paddingRight]px @[rightSecondCopyTextStyle.paddingBottom]px @[rightSecondCopyTextStyle.paddingLeft]px;">
+                                          <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table data-ko-display="rightSecondPosSelect eq 'btn'" class="button large rightSecondary" style="Margin:0 0 16px 0;border-collapse:collapse;border-spacing:0;margin:0 0 16px 0;padding:0;text-align:left;vertical-align:top;width:auto">
+                                      <tr style="padding:0;text-align:left;vertical-align:top">
+                                        <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                          <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                            <tr style="padding:0;text-align:center;vertical-align:top">
+                                              <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;bgcolor:#2299e8;background:#2299e8;background-color:#2299e8;border:0 solid #2299e8;border-collapse:collapse!important;color:#fefefe;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;
+                                              -ko-attr-bgcolor: @rightSecondButtonStyle.buttonColor; -ko-background-color: @rightSecondButtonStyle.buttonColor;">
+                                                <a data-ko-editable="rightSecondButtonLink.text" href="#" style="Margin:0;border:0 solid #2299e8;border-color: #2299e8;border-radius:3px;color:#fefefe;display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;line-height:1.3;margin:0;padding:10px 20px 10px 20px;text-align:left;text-decoration:none;
+                                                -ko-border-radius: @[rightSecondButtonStyle.radius]px; -ko-color: @rightSecondButtonStyle.color; -ko-font-size: @[rightSecondButtonStyle.size]px;
+                                                -ko-font-family: @rightSecondButtonStyle.face; -ko-attr-href: @rightSecondButtonLink.url; -ko-border-color: @rightSecondButtonStyle.buttonColor;
+                                                -padding:10px 20px 10px 20px;-ko-padding: @[rightSecondButtonStyle.paddingVert]px @[rightSecondButtonStyle.paddingHoriz]px @[rightSecondButtonStyle.paddingVert]px @[rightSecondButtonStyle.paddingHoriz]px;">
+                                                  Click Me!
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <div data-ko-display="rightSecondPosSelect eq 'img'">
+                                      <center data-parsed="" style="min-width:145.33px;width:100%">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr data-ko-display="rightSecondPosSelect eq 'img'">
+                                            <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightSecondImage.paddingTop]px @[rightSecondImage.paddingRight]px @[rightSecondImage.paddingBottom]px @[rightSecondImage.paddingLeft]px;">
+                                              <a data-ko-link="rightSecondImage.url" href="">
+                                                <img data-ko-editable="rightSecondImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
+                                                -ko-attr-width: @rightSecondImageWidth; -ko-max-width: @[rightSecondImageWidth]px; -ko-attr-alt: @rightSecondImage.alt;">
+                                              </a>
+                                            </th>
+                                          </tr>
+                                        </table>
+                                      </center>
                                     </div>
-                                    <div data-ko-editable="rightLongText" data-ko-display="rightTextVisible" class="text-center"
-                                    style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:center;
-                                    -ko-font-size: @[rightTextStyle.size]px; -ko-font-family: @rightTextStyle.face; -ko-color: @rightTextStyle.color;">
-                                      <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                      </p>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="rightThirdPosSelect eq 'title'">
+                                        <td data-ko-editable="rightThirdTitleLongText" style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:24px;font-weight:400;padding:0;line-height:1.3;margin:0;margin-bottom:10px;text-align:left;word-wrap:normal;
+                                        -ko-font-size: @[rightThirdTitleTextStyle.size]px; -ko-font-family: @rightThirdTitleTextStyle.face; -ko-color: @rightThirdTitleTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[rightThirdTitleTextStyle.paddingTop]px @[rightThirdTitleTextStyle.paddingRight]px @[rightThirdTitleTextStyle.paddingBottom]px @[rightThirdTitleTextStyle.paddingLeft]px;">
+                                          <h2>
+                                            This is a title
+                                          </h2>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="rightThirdPosSelect eq 'txt'">
+                                        <td data-ko-editable="rightThirdCopyLongText" style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left;
+                                        -ko-font-size: @[rightThirdCopyTextStyle.size]px; -ko-font-family: @rightThirdCopyTextStyle.face; -ko-color: @rightThirdCopyTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[rightThirdCopyTextStyle.paddingTop]px @[rightThirdCopyTextStyle.paddingRight]px @[rightThirdCopyTextStyle.paddingBottom]px @[rightThirdCopyTextStyle.paddingLeft]px;">
+                                          <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table data-ko-display="rightThirdPosSelect eq 'btn'" class="button large secondary" style="Margin:0 0 16px 0;border-collapse:collapse;border-spacing:0;margin:0 0 16px 0;padding:0;text-align:left;vertical-align:top;width:auto">
+                                      <tr style="padding:0;text-align:left;vertical-align:top">
+                                        <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                          <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                            <tr style="padding:0;text-align:center;vertical-align:top">
+                                              <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;bgcolor:#2299e8;background:#2299e8;background-color:#2299e8;border:0 solid #2299e8;border-collapse:collapse!important;color:#fefefe;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;
+                                              -ko-attr-bgcolor: @rightThirdButtonStyle.buttonColor; -ko-background-color: @rightThirdButtonStyle.buttonColor;">
+                                                <a data-ko-editable="rightThirdButtonLink.text" href="#" style="Margin:0;border:0 solid #2299e8;border-color: #2299e8;border-radius:3px;color:#fefefe;display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;line-height:1.3;margin:0;padding:10px 20px 10px 20px;text-align:left;text-decoration:none;
+                                                -ko-border-radius: @[rightThirdButtonStyle.radius]px; -ko-color: @rightThirdButtonStyle.color; -ko-font-size: @[rightThirdButtonStyle.size]px;
+                                                -ko-font-family: @rightThirdButtonStyle.face; -ko-attr-href: @rightThirdButtonLink.url; -ko-border-color: @rightThirdButtonStyle.buttonColor;
+                                                -padding:10px 20px 10px 20px;-ko-padding: @[rightThirdButtonStyle.paddingVert]px @[rightThirdButtonStyle.paddingHoriz]px @[rightThirdButtonStyle.paddingVert]px @[rightThirdButtonStyle.paddingHoriz]px;">
+                                                  Click Me!
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <div data-ko-display="rightThirdPosSelect eq 'img'">
+                                      <center data-parsed="" style="min-width:145.33px;width:100%">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr data-ko-display="rightThirdPosSelect eq 'img'">
+                                            <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightThirdImage.paddingTop]px @[rightThirdImage.paddingRight]px @[rightThirdImage.paddingBottom]px @[rightThirdImage.paddingLeft]px;">
+                                              <a data-ko-link="rightThirdImage.url" href="">
+                                                <img data-ko-editable="rightThirdImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
+                                                -ko-attr-width: @rightThirdImageWidth; -ko-max-width: @[rightThirdImageWidth]px; -ko-attr-alt: @rightThirdImage.alt;">
+                                              </a>
+                                            </th>
+                                          </tr>
+                                        </table>
+                                      </center>
                                     </div>
-                                    <center data-parsed="" style="min-width:145.33px;width:100%">
-                                      <table data-ko-display="rightButtonVisible" class="button large secondary" style="Margin:0 0 16px 0;border-collapse:collapse;border-spacing:0;margin:0 0 16px 0;padding:0;text-align:left;vertical-align:top;width:auto">
-                                        <tr style="padding:0;text-align:left;vertical-align:top">
-                                          <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
-                                            <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
-                                              <tr style="padding:0;text-align:left;vertical-align:top">
-                                                <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;bgcolor:#2299e8;background:#2299e8;background-color:#2299e8;border:0 solid #2299e8;border-collapse:collapse!important;color:#fefefe;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;
-                                                -ko-attr-bgcolor: @rightButtonStyle.buttonColor; -ko-background-color: @rightButtonStyle.buttonColor;">
-                                                  <a data-ko-editable="rightButtonLink.text" href="#" style="Margin:0;border:0 solid #2299e8;border-color: #2299e8;border-radius:3px;color:#fefefe;display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;line-height:1.3;margin:0;padding:10px 20px 10px 20px;text-align:left;text-decoration:none;
-                                                  -ko-border-radius: @[rightButtonStyle.radius]px; -ko-color: @rightButtonStyle.color; -ko-font-size: @[rightButtonStyle.size]px;
-                                                  -ko-font-family: @rightButtonStyle.face; -ko-attr-href: @rightButtonLink.url; -ko-border-color: @rightButtonStyle.buttonColor;">
-                                                    Click Me!
-                                                  </a>
-                                                </td>
-                                              </tr>
-                                            </table>
-                                          </td>
-                                        </tr>
-                                      </table>
-                                    </center>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="rightFourthPosSelect eq 'title'">
+                                        <td data-ko-editable="rightFourthTitleLongText" style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:24px;font-weight:400;padding:0;line-height:1.3;margin:0;margin-bottom:10px;text-align:left;word-wrap:normal;
+                                        -ko-font-size: @[rightFourthTitleTextStyle.size]px; -ko-font-family: @rightFourthTitleTextStyle.face; -ko-color: @rightFourthTitleTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[rightFourthTitleTextStyle.paddingTop]px @[rightFourthTitleTextStyle.paddingRight]px @[rightFourthTitleTextStyle.paddingBottom]px @[rightFourthTitleTextStyle.paddingLeft]px;">
+                                          <h2>
+                                            This is a title
+                                          </h2>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="rightFourthPosSelect eq 'txt'">
+                                        <td data-ko-editable="rightFourthCopyLongText" style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left;
+                                        -ko-font-size: @[rightFourthCopyTextStyle.size]px; -ko-font-family: @rightFourthCopyTextStyle.face; -ko-color: @rightFourthCopyTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[rightFourthCopyTextStyle.paddingTop]px @[rightFourthCopyTextStyle.paddingRight]px @[rightFourthCopyTextStyle.paddingBottom]px @[rightFourthCopyTextStyle.paddingLeft]px;">
+                                          <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table data-ko-display="rightFourthPosSelect eq 'btn'" class="button large secondary" style="Margin:0 0 16px 0;border-collapse:collapse;border-spacing:0;margin:0 0 16px 0;padding:0;text-align:left;vertical-align:top;width:auto">
+                                      <tr style="padding:0;text-align:left;vertical-align:top">
+                                        <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                          <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                            <tr style="padding:0;text-align:center;vertical-align:top">
+                                              <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;bgcolor:#2299e8;background:#2299e8;background-color:#2299e8;border:0 solid #2299e8;border-collapse:collapse!important;color:#fefefe;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;
+                                              -ko-attr-bgcolor: @rightFourthButtonStyle.buttonColor; -ko-background-color: @rightFourthButtonStyle.buttonColor;">
+                                                <a data-ko-editable="rightFourthButtonLink.text" href="#" style="Margin:0;border:0 solid #2299e8;border-color: #2299e8;border-radius:3px;color:#fefefe;display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;line-height:1.3;margin:0;padding:10px 20px 10px 20px;text-align:left;text-decoration:none;
+                                                -ko-border-radius: @[rightFourthButtonStyle.radius]px; -ko-color: @rightFourthButtonStyle.color; -ko-font-size: @[rightFourthButtonStyle.size]px;
+                                                -ko-font-family: @rightFourthButtonStyle.face; -ko-attr-href: @rightFourthButtonLink.url; -ko-border-color: @rightFourthButtonStyle.buttonColor;
+                                                -padding:10px 20px 10px 20px;-ko-padding: @[rightFourthButtonStyle.paddingVert]px @[rightFourthButtonStyle.paddingHoriz]px @[rightFourthButtonStyle.paddingVert]px @[rightFourthButtonStyle.paddingHoriz]px;">
+                                                  Click Me!
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <div data-ko-display="rightFourthPosSelect eq 'img'">
+                                      <center data-parsed="" style="min-width:145.33px;width:100%">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr data-ko-display="rightFourthPosSelect eq 'img'">
+                                            <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightFourthImage.paddingTop]px @[rightFourthImage.paddingRight]px @[rightFourthImage.paddingBottom]px @[rightFourthImage.paddingLeft]px;">
+                                              <a data-ko-link="rightFourthImage.url" href="">
+                                                <img data-ko-editable="rightFourthImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
+                                                -ko-attr-width: @rightFourthImageWidth; -ko-max-width: @[rightFourthImageWidth]px; -ko-attr-alt: @rightFourthImage.alt;">
+                                              </a>
+                                            </th>
+                                          </tr>
+                                        </table>
+                                      </center>
+                                    </div>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="rightFifthPosSelect eq 'title'">
+                                        <td data-ko-editable="rightFifthTitleLongText" style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:24px;font-weight:400;padding:0;line-height:1.3;margin:0;margin-bottom:10px;text-align:left;word-wrap:normal;
+                                        -ko-font-size: @[rightFifthTitleTextStyle.size]px; -ko-font-family: @rightFifthTitleTextStyle.face; -ko-color: @rightFifthTitleTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[rightFifthTitleTextStyle.paddingTop]px @[rightFifthTitleTextStyle.paddingRight]px @[rightFifthTitleTextStyle.paddingBottom]px @[rightFifthTitleTextStyle.paddingLeft]px;">
+                                          <h2>
+                                            This is a title
+                                          </h2>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                      <tr data-ko-display="rightFifthPosSelect eq 'txt'">
+                                        <td data-ko-editable="rightFifthCopyLongText" style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left;
+                                        -ko-font-size: @[rightFifthCopyTextStyle.size]px; -ko-font-family: @rightFifthCopyTextStyle.face; -ko-color: @rightFifthCopyTextStyle.color;
+                                        padding: 0px 0px 0px 0px;-ko-padding: @[rightFifthCopyTextStyle.paddingTop]px @[rightFifthCopyTextStyle.paddingRight]px @[rightFifthCopyTextStyle.paddingBottom]px @[rightFifthCopyTextStyle.paddingLeft]px;">
+                                          <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table data-ko-display="rightFifthPosSelect eq 'btn'" class="button large secondary" style="Margin:0 0 16px 0;border-collapse:collapse;border-spacing:0;margin:0 0 16px 0;padding:0;text-align:left;vertical-align:top;width:auto">
+                                      <tr style="padding:0;text-align:left;vertical-align:top">
+                                        <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                          <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                            <tr style="padding:0;text-align:center;vertical-align:top">
+                                              <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;bgcolor:#2299e8;background:#2299e8;background-color:#2299e8;border:0 solid #2299e8;border-collapse:collapse!important;color:#fefefe;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;
+                                              -ko-attr-bgcolor: @rightFifthButtonStyle.buttonColor; -ko-background-color: @rightFifthButtonStyle.buttonColor;">
+                                                <a data-ko-editable="rightFifthButtonLink.text" href="#" style="Margin:0;border:0 solid #2299e8;border-color: #2299e8;border-radius:3px;color:#fefefe;display:inline-block;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:700;line-height:1.3;margin:0;padding:10px 20px 10px 20px;text-align:left;text-decoration:none;
+                                                -ko-border-radius: @[rightFifthButtonStyle.radius]px; -ko-color: @rightFifthButtonStyle.color; -ko-font-size: @[rightFifthButtonStyle.size]px;
+                                                -ko-font-family: @rightFifthButtonStyle.face; -ko-attr-href: @rightFifthButtonLink.url; -ko-border-color: @rightFifthButtonStyle.buttonColor;
+                                                -padding:10px 20px 10px 20px;-ko-padding: @[rightFifthButtonStyle.paddingVert]px @[rightFifthButtonStyle.paddingHoriz]px @[rightFifthButtonStyle.paddingVert]px @[rightFifthButtonStyle.paddingHoriz]px;">
+                                                  Click Me!
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <div data-ko-display="rightFifthPosSelect eq 'img'">
+                                      <center data-parsed="" style="min-width:145.33px;width:100%">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                          <tr data-ko-display="rightFifthPosSelect eq 'img'">
+                                            <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightFifthImage.paddingTop]px @[rightFifthImage.paddingRight]px @[rightFifthImage.paddingBottom]px @[rightFifthImage.paddingLeft]px;">
+                                              <a data-ko-link="rightFifthImage.url" href="">
+                                                <img data-ko-editable="rightFifthImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
+                                                -ko-attr-width: @rightFifthImageWidth; -ko-max-width: @[rightFifthImageWidth]px; -ko-attr-alt: @rightFifthImage.alt;">
+                                              </a>
+                                            </th>
+                                          </tr>
+                                        </table>
+                                      </center>
+                                    </div>
                                   </th>
                                 </tr>
                               </table>
