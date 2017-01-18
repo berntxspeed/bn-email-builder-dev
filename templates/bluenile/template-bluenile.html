@@ -267,11 +267,11 @@
         thirtySeventyImgTextBlock:preview,
         threeWideBlock:preview,
         sixtyFortyBlock:preview,
+        footerCenteredBlock:preview,
+        simpleHdrBlock:preview,
         socialshareBlock:preview { -ko-background-color: @[backgroundColor] }
 
         spacerBlock:preview,
-        footerCenteredBlock:preview,
-        simpleHdrBlock:preview,
         logoBlock:preview { -ko-background-color: @[externalBackgroundColor] }
 
       }
@@ -3195,7 +3195,7 @@
                         </tbody>
                       </table>
 
-                      <table data-ko-block="footerCenteredBlock" class="row collapsed footer" style="background-color: #f0f0f0;-ko-background-color: @backgroundColor;border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:100%">
+                      <table data-ko-block="footerCenteredBlock" class="row footer" style="background-color: #f0f0f0;-ko-background-color: @backgroundColor;border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:100%">
                         <tbody>
                           <tr style="padding:0;text-align:left;vertical-align:top">
                             <th class="small-12 large-12 columns first last" style="Margin:0 auto;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;padding:0;padding-bottom:16px;padding-left:16px;padding-right:16px;text-align:left;width:564px">
@@ -3287,14 +3287,15 @@
                         </tbody>
                       </table>
 
-                      <table data-ko-block="simpleHdrBlock" class="row collapse" style="background-color: #f0f0f0;-ko-background-color: @backgroundColor;border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:100%">
+                      <table data-ko-block="simpleHdrBlock" class="row" style="background-color: #f0f0f0;-ko-background-color: @backgroundColor;border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:100%">
                         <tbody>
                           <tr style="padding:0;text-align:left;vertical-align:top">
                             <th class="small-6 large-6 columns first" style="Margin:0 auto;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;padding:0;padding-bottom:0;padding-left:0;padding-right:0;text-align:left;width:298px">
                               <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
                                 <tr style="padding:0;text-align:left;vertical-align:top">
-                                  <th data-ko-display="imageVisible" style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
-                                    <a data-ko-link="image.url" href="#" style="padding: 0px 0px 0px 0px; -ko-padding: @[image.paddingTop]px @[image.paddingRight]px @[image.paddingBottom]px @[image.paddingLeft]px;">
+                                  <th data-ko-display="imageVisible" style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;text-align:left;
+                                  padding: 0px 0px 0px 0px; -ko-padding: @[image.paddingTop]px @[image.paddingRight]px @[image.paddingBottom]px @[image.paddingLeft]px;">
+                                    <a data-ko-link="image.url" href="#">
                                       <img data-ko-editable="image.src" data-ko-placeholder-height="50" src="http://placehold.it/200x50/663399" width="200" alt=""
                                       style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:200px;outline:0;text-decoration:none;width:auto;
                                       -ko-attr-width: @imageWidth; -ko-max-width: @[imageWidth]px; -ko-attr-alt: @image.alt;">
