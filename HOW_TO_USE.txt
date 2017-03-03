@@ -1,0 +1,5 @@
+sudo grunt makeThumbs
+-makes thumbnail images of the content areas
+
+sudo grunt server
+-runs the mosaico server so you can test out your template
