@@ -50,7 +50,7 @@
     "debowerify": "1.5.0",
     "express": "4.14.0",
     "gm": "1.23.0",
-    "grunt": "1.0.1",
+    "grunt": "^1.0.1",
     "grunt-bowercopy": "1.2.4",
     "grunt-browserify": "5.0.0",
     "grunt-contrib-connect": "1.0.2",
