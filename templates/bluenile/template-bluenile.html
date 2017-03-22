@@ -70,6 +70,9 @@
         backgroundColor { label: Background Color; extend: color }
         buttonLink { label: Button; properties: paddingTop paddingRight paddingBottom paddingLeft; extend: link }
 
+        /* STEVE !!!!!!!!!!!!!!! LOOK AT THIS SHITTTTTTTTTT!!!!!!!!!! */
+        hrColor { label: Header Divider Color; extend: color }
+
         /* texts and links */
         longText { label: Text; properties: text paddingTop paddingRight paddingBottom paddingLeft; }
         textStyle { label: Text; properties: face color size }
@@ -241,6 +244,7 @@
 
         footerBlock { label: Unsubscribe Block; theme: frameTheme }
 
+        hrBlock { label: Divider Block; properties: externalBackgroundColor spacerStyle spacerSize=30; theme: contentTheme }
         spacerBlock { label: Spacer Block; properties: externalBackgroundColor spacerStyle spacerSize=30; theme: contentTheme }
 
         textCopyCtaBlock { label: Text Copy CTA Block; properties: externalBackgroundColor backgroundColor firstPosSelect=img secondPosSelect=title thirdPosSelect=txt fourthPosSelect=btn fifthPosSelect=empty titleTextStyle firstImageWidth=125 secondImageWidth=125 thirdImageWidth=125 fourthImageWidth=125 fifthImageWidth=125; theme: contentTheme }
@@ -355,6 +359,19 @@
                             -ko-attr-height: @[spacerSize]px;-ko-line-height: @[spacerSize]px;-ko-font-size: @[spacerSize]px;">
                               &nbsp;
                             </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <table data-ko-block="hrBlock" class="spacer" style="background-color: #f0f0f0;bgcolor: #f0f0f0; -ko-background-color: @backgroundColor; -ko-attr-bgcolor: @backgroundColor;border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                        <tbody>
+                          <tr style="padding:0;text-align:left;vertical-align:top">
+                            <td height="30px" style="background-color: #f0f0f0;bgcolor: #f0f0f0;-ko-background-color: @backgroundColor;ko-attr-bgcolor: @backgroundColor;-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:30px;font-weight:400;hyphens:auto;line-height:30px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;
+                            -ko-attr-height: @[spacerSize]px;-ko-line-height: @[spacerSize]px;-ko-font-size: @[spacerSize]px;">
+                              <hr style="border:0;border-top:1px solid #000000;color:#000000;background-color:#000000;
+                              -ko-background-color: @hrColor;-ko-border-top:1px solid @hrColor;-ko-color:@hrColor"/>
+                              <!-- STEVE !!!!!!!!!!!!!!! LOOK AT THIS SHITTTTTTTTTT!!!!!!!!!! -->
+                            </td> <!-- add header divider thickness to the 1px part of -ko-border-top.  note replace 1px with @[hrThickness]px -->
                           </tr>
                         </tbody>
                       </table>
