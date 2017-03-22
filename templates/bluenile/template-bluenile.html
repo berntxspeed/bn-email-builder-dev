@@ -36,7 +36,8 @@
 
         height { label: Height; widget: integer }
         imageHeight { label: Image Height; extend: height; }
-        imageWidth { label: Image Size; widget: select; options: 125=Small|170=Medium|250=Large|580=Xlarge; }
+        imageWidth { label: Image Size; widget: integer; }
+        /*imageWidth { label: Image Size; widget: select; options: 125=Small|170=Medium|250=Large|580=Xlarge; }*/
 
         lineHeight { label: Line Height; widget: integer }
         fontSize { label: Font Size; widget: integer }
@@ -66,7 +67,7 @@
         /* content types */
         blocks { label: Blocks; properties: blocks[]; }
         link { label: Link; properties: text url }
-        image { label: Image; properties: src url alt paddingTop paddingRight paddingBottom paddingLeft }
+        image { label: Image; properties: src url alt imageWidth paddingTop paddingRight paddingBottom paddingLeft }
         backgroundColor { label: Background Color; extend: color }
         buttonLink { label: Button; properties: paddingTop paddingRight paddingBottom paddingLeft; extend: link }
 
@@ -435,9 +436,9 @@
                                           <tr>
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftFirstImage.paddingTop]px @[leftFirstImage.paddingRight]px @[leftFirstImage.paddingBottom]px @[leftFirstImage.paddingLeft]px;">
                                               <a data-ko-link="leftFirstImage.url" href="">
-                                                <img data-ko-editable="leftFirstImage.src" data-ko-placeholder-height="200" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
+                                                <img data-ko-editable="leftFirstImage.src" data-ko-placeholder-height="125" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @leftFirstImageWidth; -ko-max-width: @[leftFirstImageWidth]px; -ko-attr-alt: @leftFirstImage.alt;">
+                                                -ko-attr-width: @leftFirstImage.imageWidth; -ko-max-width: @[leftFirstImage.imageWidth]px; -ko-attr-alt: @leftFirstImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -496,9 +497,9 @@
                                           <tr>
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftSecondImage.paddingTop]px @[leftSecondImage.paddingRight]px @[leftSecondImage.paddingBottom]px @[leftSecondImage.paddingLeft]px;">
                                               <a data-ko-link="leftSecondImage.url" href="">
-                                                <img data-ko-editable="leftSecondImage.src" data-ko-placeholder-height="200" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
+                                                <img data-ko-editable="leftSecondImage.src" data-ko-placeholder-height="125" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @leftSecondImageWidth; -ko-max-width: @[leftSecondImageWidth]px; -ko-attr-alt: @leftSecondImage.alt;">
+                                                -ko-attr-width: @leftSecondImage.imageWidth; -ko-max-width: @[leftSecondImage.imageWidth]px; -ko-attr-alt: @leftSecondImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -557,9 +558,9 @@
                                           <tr>
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftThirdImage.paddingTop]px @[leftThirdImage.paddingRight]px @[leftThirdImage.paddingBottom]px @[leftThirdImage.paddingLeft]px;">
                                               <a data-ko-link="leftThirdImage.url" href="">
-                                                <img data-ko-editable="leftThirdImage.src" data-ko-placeholder-height="200" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
+                                                <img data-ko-editable="leftThirdImage.src" data-ko-placeholder-height="125" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @leftThirdImageWidth; -ko-max-width: @[leftThirdImageWidth]px; -ko-attr-alt: @leftThirdImage.alt;">
+                                                -ko-attr-width: @leftThirdImage.imageWidth; -ko-max-width: @[leftThirdImage.imageWidth]px; -ko-attr-alt: @leftThirdImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -618,9 +619,9 @@
                                           <tr>
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftFourthImage.paddingTop]px @[leftFourthImage.paddingRight]px @[leftFourthImage.paddingBottom]px @[leftFourthImage.paddingLeft]px;">
                                               <a data-ko-link="leftFourthImage.url" href="">
-                                                <img data-ko-editable="leftFourthImage.src" data-ko-placeholder-height="200" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
+                                                <img data-ko-editable="leftFourthImage.src" data-ko-placeholder-height="125" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @leftFourthImageWidth; -ko-max-width: @[leftFourthImageWidth]px; -ko-attr-alt: @leftFourthImage.alt;">
+                                                -ko-attr-width: @leftFourthImage.imageWidth; -ko-max-width: @[leftFourthImage.imageWidth]px; -ko-attr-alt: @leftFourthImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -679,9 +680,9 @@
                                           <tr>
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftFifthImage.paddingTop]px @[leftFifthImage.paddingRight]px @[leftFifthImage.paddingBottom]px @[leftFifthImage.paddingLeft]px;">
                                               <a data-ko-link="leftFifthImage.url" href="">
-                                                <img data-ko-editable="leftFifthImage.src" data-ko-placeholder-height="200" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
+                                                <img data-ko-editable="leftFifthImage.src" data-ko-placeholder-height="125" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @leftFifthImageWidth; -ko-max-width: @[leftFifthImageWidth]px; -ko-attr-alt: @leftFifthImage.alt;">
+                                                -ko-attr-width: @leftFifthImage.imageWidth; -ko-max-width: @[leftFifthImage.imageWidth]px; -ko-attr-alt: @leftFifthImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -748,9 +749,9 @@
                                           <tr>
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightFirstImage.paddingTop]px @[rightFirstImage.paddingRight]px @[rightFirstImage.paddingBottom]px @[rightFirstImage.paddingLeft]px;">
                                               <a data-ko-link="rightFirstImage.url" href="">
-                                                <img data-ko-editable="rightFirstImage.src" data-ko-placeholder-height="200" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
+                                                <img data-ko-editable="rightFirstImage.src" data-ko-placeholder-height="125" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @rightFirstImageWidth; -ko-max-width: @[rightFirstImageWidth]px; -ko-attr-alt: @rightFirstImage.alt;">
+                                                -ko-attr-width: @rightFirstImage.imageWidth; -ko-max-width: @[rightFirstImage.imageWidth]px; -ko-attr-alt: @rightFirstImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -809,9 +810,9 @@
                                           <tr>
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightSecondImage.paddingTop]px @[rightSecondImage.paddingRight]px @[rightSecondImage.paddingBottom]px @[rightSecondImage.paddingLeft]px;">
                                               <a data-ko-link="rightSecondImage.url" href="">
-                                                <img data-ko-editable="rightSecondImage.src" data-ko-placeholder-height="200" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
+                                                <img data-ko-editable="rightSecondImage.src" data-ko-placeholder-height="125" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @rightSecondImageWidth; -ko-max-width: @[rightSecondImageWidth]px; -ko-attr-alt: @rightSecondImage.alt;">
+                                                -ko-attr-width: @rightSecondImage.imageWidth; -ko-max-width: @[rightSecondImage.imageWidth]px; -ko-attr-alt: @rightSecondImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -870,9 +871,9 @@
                                           <tr>
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightThirdImage.paddingTop]px @[rightThirdImage.paddingRight]px @[rightThirdImage.paddingBottom]px @[rightThirdImage.paddingLeft]px;">
                                               <a data-ko-link="rightThirdImage.url" href="">
-                                                <img data-ko-editable="rightThirdImage.src" data-ko-placeholder-height="200" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
+                                                <img data-ko-editable="rightThirdImage.src" data-ko-placeholder-height="125" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @rightThirdImageWidth; -ko-max-width: @[rightThirdImageWidth]px; -ko-attr-alt: @rightThirdImage.alt;">
+                                                -ko-attr-width: @rightThirdImage.imageWidth; -ko-max-width: @[rightThirdImage.imageWidth]px; -ko-attr-alt: @rightThirdImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -931,9 +932,9 @@
                                           <tr>
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightFourthImage.paddingTop]px @[rightFourthImage.paddingRight]px @[rightFourthImage.paddingBottom]px @[rightFourthImage.paddingLeft]px;">
                                               <a data-ko-link="rightFourthImage.url" href="">
-                                                <img data-ko-editable="rightFourthImage.src" data-ko-placeholder-height="200" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
+                                                <img data-ko-editable="rightFourthImage.src" data-ko-placeholder-height="125" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @rightFourthImageWidth; -ko-max-width: @[rightFourthImageWidth]px; -ko-attr-alt: @rightFourthImage.alt;">
+                                                -ko-attr-width: @rightFourthImage.imageWidth; -ko-max-width: @[rightFourthImage.imageWidth]px; -ko-attr-alt: @rightFourthImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -992,9 +993,9 @@
                                           <tr>
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightFifthImage.paddingTop]px @[rightFifthImage.paddingRight]px @[rightFifthImage.paddingBottom]px @[rightFifthImage.paddingLeft]px;">
                                               <a data-ko-link="rightFifthImage.url" href="">
-                                                <img data-ko-editable="rightFifthImage.src" data-ko-placeholder-height="200" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
+                                                <img data-ko-editable="rightFifthImage.src" data-ko-placeholder-height="125" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @rightFifthImageWidth; -ko-max-width: @[rightFifthImageWidth]px; -ko-attr-alt: @rightFifthImage.alt;">
+                                                -ko-attr-width: @rightFifthImage.imageWidth; -ko-max-width: @[rightFifthImage.imageWidth]px; -ko-attr-alt: @rightFifthImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -1068,9 +1069,9 @@
                                           <tr>
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftFirstImage.paddingTop]px @[leftFirstImage.paddingRight]px @[leftFirstImage.paddingBottom]px @[leftFirstImage.paddingLeft]px;">
                                               <a data-ko-link="leftFirstImage.url" href="">
-                                                <img data-ko-editable="leftFirstImage.src" data-ko-placeholder-height="200" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
+                                                <img data-ko-editable="leftFirstImage.src" data-ko-placeholder-height="125" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @leftFirstImageWidth; -ko-max-width: @[leftFirstImageWidth]px; -ko-attr-alt: @leftFirstImage.alt;">
+                                                -ko-attr-width: @leftFirstImage.imageWidth; -ko-max-width: @[leftFirstImage.imageWidth]px; -ko-attr-alt: @leftFirstImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -1129,9 +1130,9 @@
                                           <tr>
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftSecondImage.paddingTop]px @[leftSecondImage.paddingRight]px @[leftSecondImage.paddingBottom]px @[leftSecondImage.paddingLeft]px;">
                                               <a data-ko-link="leftSecondImage.url" href="">
-                                                <img data-ko-editable="leftSecondImage.src" data-ko-placeholder-height="200" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
+                                                <img data-ko-editable="leftSecondImage.src" data-ko-placeholder-height="125" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @leftSecondImageWidth; -ko-max-width: @[leftSecondImageWidth]px; -ko-attr-alt: @leftSecondImage.alt;">
+                                                -ko-attr-width: @leftSecondImage.imageWidth; -ko-max-width: @[leftSecondImage.imageWidth]px; -ko-attr-alt: @leftSecondImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -1190,9 +1191,9 @@
                                           <tr>
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftThirdImage.paddingTop]px @[leftThirdImage.paddingRight]px @[leftThirdImage.paddingBottom]px @[leftThirdImage.paddingLeft]px;">
                                               <a data-ko-link="leftThirdImage.url" href="">
-                                                <img data-ko-editable="leftThirdImage.src" data-ko-placeholder-height="200" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
+                                                <img data-ko-editable="leftThirdImage.src" data-ko-placeholder-height="125" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @leftThirdImageWidth; -ko-max-width: @[leftThirdImageWidth]px; -ko-attr-alt: @leftThirdImage.alt;">
+                                                -ko-attr-width: @leftThirdImage.imageWidth; -ko-max-width: @[leftThirdImage.imageWidth]px; -ko-attr-alt: @leftThirdImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -1251,9 +1252,9 @@
                                           <tr>
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftFourthImage.paddingTop]px @[leftFourthImage.paddingRight]px @[leftFourthImage.paddingBottom]px @[leftFourthImage.paddingLeft]px;">
                                               <a data-ko-link="leftFourthImage.url" href="">
-                                                <img data-ko-editable="leftFourthImage.src" data-ko-placeholder-height="200" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
+                                                <img data-ko-editable="leftFourthImage.src" data-ko-placeholder-height="125" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @leftFourthImageWidth; -ko-max-width: @[leftFourthImageWidth]px; -ko-attr-alt: @leftFourthImage.alt;">
+                                                -ko-attr-width: @leftFourthImage.imageWidth; -ko-max-width: @[leftFourthImage.imageWidth]px; -ko-attr-alt: @leftFourthImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -1312,9 +1313,9 @@
                                           <tr>
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftFifthImage.paddingTop]px @[leftFifthImage.paddingRight]px @[leftFifthImage.paddingBottom]px @[leftFifthImage.paddingLeft]px;">
                                               <a data-ko-link="leftFifthImage.url" href="">
-                                                <img data-ko-editable="leftFifthImage.src" data-ko-placeholder-height="200" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
+                                                <img data-ko-editable="leftFifthImage.src" data-ko-placeholder-height="125" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @leftFifthImageWidth; -ko-max-width: @[leftFifthImageWidth]px; -ko-attr-alt: @leftFifthImage.alt;">
+                                                -ko-attr-width: @leftFifthImage.imageWidth; -ko-max-width: @[leftFifthImage.imageWidth]px; -ko-attr-alt: @leftFifthImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -1381,9 +1382,9 @@
                                           <tr>
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightFirstImage.paddingTop]px @[rightFirstImage.paddingRight]px @[rightFirstImage.paddingBottom]px @[rightFirstImage.paddingLeft]px;">
                                               <a data-ko-link="rightFirstImage.url" href="">
-                                                <img data-ko-editable="rightFirstImage.src" data-ko-placeholder-height="200" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
+                                                <img data-ko-editable="rightFirstImage.src" data-ko-placeholder-height="125" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @rightFirstImageWidth; -ko-max-width: @[rightFirstImageWidth]px; -ko-attr-alt: @rightFirstImage.alt;">
+                                                -ko-attr-width: @rightFirstImage.imageWidth; -ko-max-width: @[rightFirstImage.imageWidth]px; -ko-attr-alt: @rightFirstImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -1442,9 +1443,9 @@
                                           <tr>
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightSecondImage.paddingTop]px @[rightSecondImage.paddingRight]px @[rightSecondImage.paddingBottom]px @[rightSecondImage.paddingLeft]px;">
                                               <a data-ko-link="rightSecondImage.url" href="">
-                                                <img data-ko-editable="rightSecondImage.src" data-ko-placeholder-height="200" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
+                                                <img data-ko-editable="rightSecondImage.src" data-ko-placeholder-height="125" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @rightSecondImageWidth; -ko-max-width: @[rightSecondImageWidth]px; -ko-attr-alt: @rightSecondImage.alt;">
+                                                -ko-attr-width: @rightSecondImage.imageWidth; -ko-max-width: @[rightSecondImage.imageWidth]px; -ko-attr-alt: @rightSecondImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -1503,9 +1504,9 @@
                                           <tr>
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightThirdImage.paddingTop]px @[rightThirdImage.paddingRight]px @[rightThirdImage.paddingBottom]px @[rightThirdImage.paddingLeft]px;">
                                               <a data-ko-link="rightThirdImage.url" href="">
-                                                <img data-ko-editable="rightThirdImage.src" data-ko-placeholder-height="200" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
+                                                <img data-ko-editable="rightThirdImage.src" data-ko-placeholder-height="125" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @rightThirdImageWidth; -ko-max-width: @[rightThirdImageWidth]px; -ko-attr-alt: @rightThirdImage.alt;">
+                                                -ko-attr-width: @rightThirdImage.imageWidth; -ko-max-width: @[rightThirdImage.imageWidth]px; -ko-attr-alt: @rightThirdImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -1564,9 +1565,9 @@
                                           <tr>
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightFourthImage.paddingTop]px @[rightFourthImage.paddingRight]px @[rightFourthImage.paddingBottom]px @[rightFourthImage.paddingLeft]px;">
                                               <a data-ko-link="rightFourthImage.url" href="">
-                                                <img data-ko-editable="rightFourthImage.src" data-ko-placeholder-height="200" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
+                                                <img data-ko-editable="rightFourthImage.src" data-ko-placeholder-height="125" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @rightFourthImageWidth; -ko-max-width: @[rightFourthImageWidth]px; -ko-attr-alt: @rightFourthImage.alt;">
+                                                -ko-attr-width: @rightFourthImage.imageWidth; -ko-max-width: @[rightFourthImage.imageWidth]px; -ko-attr-alt: @rightFourthImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -1625,9 +1626,9 @@
                                           <tr>
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightFifthImage.paddingTop]px @[rightFifthImage.paddingRight]px @[rightFifthImage.paddingBottom]px @[rightFifthImage.paddingLeft]px;">
                                               <a data-ko-link="rightFifthImage.url" href="">
-                                                <img data-ko-editable="rightFifthImage.src" data-ko-placeholder-height="200" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
+                                                <img data-ko-editable="rightFifthImage.src" data-ko-placeholder-height="125" class="small-float-center" src="http://placehold.it/125x200" alt="" width="125"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @rightFifthImageWidth; -ko-max-width: @[rightFifthImageWidth]px; -ko-attr-alt: @rightFifthImage.alt;">
+                                                -ko-attr-width: @rightFifthImage.imageWidth; -ko-max-width: @[rightFifthImage.imageWidth]px; -ko-attr-alt: @rightFifthImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -1701,9 +1702,9 @@
                                           <tr data-ko-display="firstPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[firstImage.paddingTop]px @[firstImage.paddingRight]px @[firstImage.paddingBottom]px @[firstImage.paddingLeft]px;">
                                               <a data-ko-link="firstImage.url" href="">
-                                                <img data-ko-editable="firstImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="firstImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @firstImageWidth; -ko-max-width: @[firstImageWidth]px; -ko-attr-alt: @firstImage.alt;">
+                                                -ko-attr-width: @firstImage.imageWidth; -ko-max-width: @[firstImage.imageWidth]px; -ko-attr-alt: @firstImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -1762,9 +1763,9 @@
                                           <tr data-ko-display="secondPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[secondImage.paddingTop]px @[secondImage.paddingRight]px @[secondImage.paddingBottom]px @[secondImage.paddingLeft]px;">
                                               <a data-ko-link="secondImage.url" href="">
-                                                <img data-ko-editable="secondImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="secondImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @secondImageWidth; -ko-max-width: @[secondImageWidth]px; -ko-attr-alt: @secondImage.alt;">
+                                                -ko-attr-width: @secondImage.imageWidth; -ko-max-width: @[secondImage.imageWidth]px; -ko-attr-alt: @secondImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -1823,9 +1824,9 @@
                                           <tr data-ko-display="thirdPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[thirdImage.paddingTop]px @[thirdImage.paddingRight]px @[thirdImage.paddingBottom]px @[thirdImage.paddingLeft]px;">
                                               <a data-ko-link="thirdImage.url" href="">
-                                                <img data-ko-editable="thirdImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="thirdImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @thirdImageWidth; -ko-max-width: @[thirdImageWidth]px; -ko-attr-alt: @thirdImage.alt;">
+                                                -ko-attr-width: @thirdImage.imageWidth; -ko-max-width: @[thirdImage.imageWidth]px; -ko-attr-alt: @thirdImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -1884,9 +1885,9 @@
                                           <tr data-ko-display="fourthPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[fourthImage.paddingTop]px @[fourthImage.paddingRight]px @[fourthImage.paddingBottom]px @[fourthImage.paddingLeft]px;">
                                               <a data-ko-link="fourthImage.url" href="">
-                                                <img data-ko-editable="fourthImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="fourthImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @fourthImageWidth; -ko-max-width: @[fourthImageWidth]px; -ko-attr-alt: @fourthImage.alt;">
+                                                -ko-attr-width: @fourthImage.imageWidth; -ko-max-width: @[fourthImage.imageWidth]px; -ko-attr-alt: @fourthImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -1945,9 +1946,9 @@
                                           <tr data-ko-display="fifthPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[fifthImage.paddingTop]px @[fifthImage.paddingRight]px @[fifthImage.paddingBottom]px @[fifthImage.paddingLeft]px;">
                                               <a data-ko-link="fifthImage.url" href="">
-                                                <img data-ko-editable="fifthImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="fifthImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @fifthImageWidth; -ko-max-width: @[fifthImageWidth]px; -ko-attr-alt: @fifthImage.alt;">
+                                                -ko-attr-width: @fifthImage.imageWidth; -ko-max-width: @[fifthImage.imageWidth]px; -ko-attr-alt: @fifthImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -2023,9 +2024,9 @@
                                           <tr data-ko-display="leftFirstPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftFirstImage.paddingTop]px @[leftFirstImage.paddingRight]px @[leftFirstImage.paddingBottom]px @[leftFirstImage.paddingLeft]px;">
                                               <a data-ko-link="leftFirstImage.url" href="">
-                                                <img data-ko-editable="leftFirstImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="leftFirstImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @leftFirstImageWidth; -ko-max-width: @[leftFirstImageWidth]px; -ko-attr-alt: @leftFirstImage.alt;">
+                                                -ko-attr-width: @leftFirstImage.imageWidth; -ko-max-width: @[leftFirstImage.imageWidth]px; -ko-attr-alt: @leftFirstImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -2084,9 +2085,9 @@
                                           <tr data-ko-display="leftSecondPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftSecondImage.paddingTop]px @[leftSecondImage.paddingRight]px @[leftSecondImage.paddingBottom]px @[leftSecondImage.paddingLeft]px;">
                                               <a data-ko-link="leftSecondImage.url" href="">
-                                                <img data-ko-editable="leftSecondImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="leftSecondImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @leftSecondImageWidth; -ko-max-width: @[leftSecondImageWidth]px; -ko-attr-alt: @leftSecondImage.alt;">
+                                                -ko-attr-width: @leftSecondImage.imageWidth; -ko-max-width: @[leftSecondImage.imageWidth]px; -ko-attr-alt: @leftSecondImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -2145,9 +2146,9 @@
                                           <tr data-ko-display="leftThirdPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftThirdImage.paddingTop]px @[leftThirdImage.paddingRight]px @[leftThirdImage.paddingBottom]px @[leftThirdImage.paddingLeft]px;">
                                               <a data-ko-link="leftThirdImage.url" href="">
-                                                <img data-ko-editable="leftThirdImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="leftThirdImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @leftThirdImageWidth; -ko-max-width: @[leftThirdImageWidth]px; -ko-attr-alt: @leftThirdImage.alt;">
+                                                -ko-attr-width: @leftThirdImage.imageWidth; -ko-max-width: @[leftThirdImage.imageWidth]px; -ko-attr-alt: @leftThirdImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -2206,9 +2207,9 @@
                                           <tr data-ko-display="leftFourthPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftFourthImage.paddingTop]px @[leftFourthImage.paddingRight]px @[leftFourthImage.paddingBottom]px @[leftFourthImage.paddingLeft]px;">
                                               <a data-ko-link="leftFourthImage.url" href="">
-                                                <img data-ko-editable="leftFourthImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="leftFourthImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @leftFourthImageWidth; -ko-max-width: @[leftFourthImageWidth]px; -ko-attr-alt: @leftFourthImage.alt;">
+                                                -ko-attr-width: @leftFourthImage.imageWidth; -ko-max-width: @[leftFourthImage.imageWidth]px; -ko-attr-alt: @leftFourthImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -2267,9 +2268,9 @@
                                           <tr data-ko-display="leftFifthPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftFifthImage.paddingTop]px @[leftFifthImage.paddingRight]px @[leftFifthImage.paddingBottom]px @[leftFifthImage.paddingLeft]px;">
                                               <a data-ko-link="leftFifthImage.url" href="">
-                                                <img data-ko-editable="leftFifthImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="leftFifthImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @leftFifthImageWidth; -ko-max-width: @[leftFifthImageWidth]px; -ko-attr-alt: @leftFifthImage.alt;">
+                                                -ko-attr-width: @leftFifthImage.imageWidth; -ko-max-width: @[leftFifthImage.imageWidth]px; -ko-attr-alt: @leftFifthImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -2336,9 +2337,9 @@
                                           <tr data-ko-display="rightFirstPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightFirstImage.paddingTop]px @[rightFirstImage.paddingRight]px @[rightFirstImage.paddingBottom]px @[rightFirstImage.paddingLeft]px;">
                                               <a data-ko-link="rightFirstImage.url" href="">
-                                                <img data-ko-editable="rightFirstImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="rightFirstImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @rightFirstImageWidth; -ko-max-width: @[rightFirstImageWidth]px; -ko-attr-alt: @rightFirstImage.alt;">
+                                                -ko-attr-width: @rightFirstImage.imageWidth; -ko-max-width: @[rightFirstImage.imageWidth]px; -ko-attr-alt: @rightFirstImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -2397,9 +2398,9 @@
                                           <tr data-ko-display="rightSecondPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightSecondImage.paddingTop]px @[rightSecondImage.paddingRight]px @[rightSecondImage.paddingBottom]px @[rightSecondImage.paddingLeft]px;">
                                               <a data-ko-link="rightSecondImage.url" href="">
-                                                <img data-ko-editable="rightSecondImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="rightSecondImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @rightSecondImageWidth; -ko-max-width: @[rightSecondImageWidth]px; -ko-attr-alt: @rightSecondImage.alt;">
+                                                -ko-attr-width: @rightSecondImage.imageWidth; -ko-max-width: @[rightSecondImage.imageWidth]px; -ko-attr-alt: @rightSecondImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -2458,9 +2459,9 @@
                                           <tr data-ko-display="rightThirdPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightThirdImage.paddingTop]px @[rightThirdImage.paddingRight]px @[rightThirdImage.paddingBottom]px @[rightThirdImage.paddingLeft]px;">
                                               <a data-ko-link="rightThirdImage.url" href="">
-                                                <img data-ko-editable="rightThirdImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="rightThirdImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @rightThirdImageWidth; -ko-max-width: @[rightThirdImageWidth]px; -ko-attr-alt: @rightThirdImage.alt;">
+                                                -ko-attr-width: @rightThirdImage.imageWidth; -ko-max-width: @[rightThirdImage.imageWidth]px; -ko-attr-alt: @rightThirdImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -2519,9 +2520,9 @@
                                           <tr data-ko-display="rightFourthPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightFourthImage.paddingTop]px @[rightFourthImage.paddingRight]px @[rightFourthImage.paddingBottom]px @[rightFourthImage.paddingLeft]px;">
                                               <a data-ko-link="rightFourthImage.url" href="">
-                                                <img data-ko-editable="rightFourthImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="rightFourthImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @rightFourthImageWidth; -ko-max-width: @[rightFourthImageWidth]px; -ko-attr-alt: @rightFourthImage.alt;">
+                                                -ko-attr-width: @rightFourthImage.imageWidth; -ko-max-width: @[rightFourthImage.imageWidth]px; -ko-attr-alt: @rightFourthImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -2580,9 +2581,9 @@
                                           <tr data-ko-display="rightFifthPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightFifthImage.paddingTop]px @[rightFifthImage.paddingRight]px @[rightFifthImage.paddingBottom]px @[rightFifthImage.paddingLeft]px;">
                                               <a data-ko-link="rightFifthImage.url" href="">
-                                                <img data-ko-editable="rightFifthImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="rightFifthImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @rightFifthImageWidth; -ko-max-width: @[rightFifthImageWidth]px; -ko-attr-alt: @rightFifthImage.alt;">
+                                                -ko-attr-width: @rightFifthImage.imageWidth; -ko-max-width: @[rightFifthImage.imageWidth]px; -ko-attr-alt: @rightFifthImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -2656,9 +2657,9 @@
                                           <tr data-ko-display="leftFirstPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftFirstImage.paddingTop]px @[leftFirstImage.paddingRight]px @[leftFirstImage.paddingBottom]px @[leftFirstImage.paddingLeft]px;">
                                               <a data-ko-link="leftFirstImage.url" href="">
-                                                <img data-ko-editable="leftFirstImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="leftFirstImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @leftFirstImageWidth; -ko-max-width: @[leftFirstImageWidth]px; -ko-attr-alt: @leftFirstImage.alt;">
+                                                -ko-attr-width: @leftFirstImage.imageWidth; -ko-max-width: @[leftFirstImage.imageWidth]px; -ko-attr-alt: @leftFirstImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -2717,9 +2718,9 @@
                                           <tr data-ko-display="leftSecondPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftSecondImage.paddingTop]px @[leftSecondImage.paddingRight]px @[leftSecondImage.paddingBottom]px @[leftSecondImage.paddingLeft]px;">
                                               <a data-ko-link="leftSecondImage.url" href="">
-                                                <img data-ko-editable="leftSecondImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="leftSecondImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @leftSecondImageWidth; -ko-max-width: @[leftSecondImageWidth]px; -ko-attr-alt: @leftSecondImage.alt;">
+                                                -ko-attr-width: @leftSecondImage.imageWidth; -ko-max-width: @[leftSecondImage.imageWidth]px; -ko-attr-alt: @leftSecondImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -2778,9 +2779,9 @@
                                           <tr data-ko-display="leftThirdPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftThirdImage.paddingTop]px @[leftThirdImage.paddingRight]px @[leftThirdImage.paddingBottom]px @[leftThirdImage.paddingLeft]px;">
                                               <a data-ko-link="leftThirdImage.url" href="">
-                                                <img data-ko-editable="leftThirdImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="leftThirdImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @leftThirdImageWidth; -ko-max-width: @[leftThirdImageWidth]px; -ko-attr-alt: @leftThirdImage.alt;">
+                                                -ko-attr-width: @leftThirdImage.imageWidth; -ko-max-width: @[leftThirdImage.imageWidth]px; -ko-attr-alt: @leftThirdImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -2839,9 +2840,9 @@
                                           <tr data-ko-display="leftFourthPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftFourthImage.paddingTop]px @[leftFourthImage.paddingRight]px @[leftFourthImage.paddingBottom]px @[leftFourthImage.paddingLeft]px;">
                                               <a data-ko-link="leftFourthImage.url" href="">
-                                                <img data-ko-editable="leftFourthImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="leftFourthImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @leftFourthImageWidth; -ko-max-width: @[leftFourthImageWidth]px; -ko-attr-alt: @leftFourthImage.alt;">
+                                                -ko-attr-width: @leftFourthImage.imageWidth; -ko-max-width: @[leftFourthImage.imageWidth]px; -ko-attr-alt: @leftFourthImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -2900,9 +2901,9 @@
                                           <tr data-ko-display="leftFifthPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[leftFifthImage.paddingTop]px @[leftFifthImage.paddingRight]px @[leftFifthImage.paddingBottom]px @[leftFifthImage.paddingLeft]px;">
                                               <a data-ko-link="leftFifthImage.url" href="">
-                                                <img data-ko-editable="leftFifthImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="leftFifthImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @leftFifthImageWidth; -ko-max-width: @[leftFifthImageWidth]px; -ko-attr-alt: @leftFifthImage.alt;">
+                                                -ko-attr-width: @leftFifthImage.imageWidth; -ko-max-width: @[leftFifthImage.imageWidth]px; -ko-attr-alt: @leftFifthImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -2969,9 +2970,9 @@
                                           <tr data-ko-display="centerFirstPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[centerFirstImage.paddingTop]px @[centerFirstImage.paddingRight]px @[centerFirstImage.paddingBottom]px @[centerFirstImage.paddingLeft]px;">
                                               <a data-ko-link="centerFirstImage.url" href="">
-                                                <img data-ko-editable="centerFirstImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="centerFirstImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @centerFirstImageWidth; -ko-max-width: @[centerFirstImageWidth]px; -ko-attr-alt: @centerFirstImage.alt;">
+                                                -ko-attr-width: @centerFirstImage.imageWidth; -ko-max-width: @[centerFirstImage.imageWidth]px; -ko-attr-alt: @centerFirstImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -3030,9 +3031,9 @@
                                           <tr data-ko-display="centerSecondPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[centerSecondImage.paddingTop]px @[centerSecondImage.paddingRight]px @[centerSecondImage.paddingBottom]px @[centerSecondImage.paddingLeft]px;">
                                               <a data-ko-link="centerSecondImage.url" href="">
-                                                <img data-ko-editable="centerSecondImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="centerSecondImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @centerSecondImageWidth; -ko-max-width: @[centerSecondImageWidth]px; -ko-attr-alt: @centerSecondImage.alt;">
+                                                -ko-attr-width: @centerSecondImage.imageWidth; -ko-max-width: @[centerSecondImage.imageWidth]px; -ko-attr-alt: @centerSecondImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -3091,9 +3092,9 @@
                                           <tr data-ko-display="centerThirdPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[centerThirdImage.paddingTop]px @[centerThirdImage.paddingRight]px @[centerThirdImage.paddingBottom]px @[centerThirdImage.paddingLeft]px;">
                                               <a data-ko-link="centerThirdImage.url" href="">
-                                                <img data-ko-editable="centerThirdImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="centerThirdImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @centerThirdImageWidth; -ko-max-width: @[centerThirdImageWidth]px; -ko-attr-alt: @centerThirdImage.alt;">
+                                                -ko-attr-width: @centerThirdImage.imageWidth; -ko-max-width: @[centerThirdImage.imageWidth]px; -ko-attr-alt: @centerThirdImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -3152,9 +3153,9 @@
                                           <tr data-ko-display="centerFourthPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[centerFourthImage.paddingTop]px @[centerFourthImage.paddingRight]px @[centerFourthImage.paddingBottom]px @[centerFourthImage.paddingLeft]px;">
                                               <a data-ko-link="centerFourthImage.url" href="">
-                                                <img data-ko-editable="centerFourthImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="centerFourthImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @centerFourthImageWidth; -ko-max-width: @[centerFourthImageWidth]px; -ko-attr-alt: @centerFourthImage.alt;">
+                                                -ko-attr-width: @centerFourthImage.imageWidth; -ko-max-width: @[centerFourthImage.imageWidth]px; -ko-attr-alt: @centerFourthImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -3213,9 +3214,9 @@
                                           <tr data-ko-display="centerFifthPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[centerFifthImage.paddingTop]px @[centerFifthImage.paddingRight]px @[centerFifthImage.paddingBottom]px @[centerFifthImage.paddingLeft]px;">
                                               <a data-ko-link="centerFifthImage.url" href="">
-                                                <img data-ko-editable="centerFifthImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="centerFifthImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @centerFifthImageWidth; -ko-max-width: @[centerFifthImageWidth]px; -ko-attr-alt: @centerFifthImage.alt;">
+                                                -ko-attr-width: @centerFifthImage.imageWidth; -ko-max-width: @[centerFifthImage.imageWidth]px; -ko-attr-alt: @centerFifthImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -3282,9 +3283,9 @@
                                           <tr data-ko-display="rightFirstPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightFirstImage.paddingTop]px @[rightFirstImage.paddingRight]px @[rightFirstImage.paddingBottom]px @[rightFirstImage.paddingLeft]px;">
                                               <a data-ko-link="rightFirstImage.url" href="">
-                                                <img data-ko-editable="rightFirstImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="rightFirstImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @rightFirstImageWidth; -ko-max-width: @[rightFirstImageWidth]px; -ko-attr-alt: @rightFirstImage.alt;">
+                                                -ko-attr-width: @rightFirstImage.imageWidth; -ko-max-width: @[rightFirstImage.imageWidth]px; -ko-attr-alt: @rightFirstImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -3343,9 +3344,9 @@
                                           <tr data-ko-display="rightSecondPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightSecondImage.paddingTop]px @[rightSecondImage.paddingRight]px @[rightSecondImage.paddingBottom]px @[rightSecondImage.paddingLeft]px;">
                                               <a data-ko-link="rightSecondImage.url" href="">
-                                                <img data-ko-editable="rightSecondImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="rightSecondImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @rightSecondImageWidth; -ko-max-width: @[rightSecondImageWidth]px; -ko-attr-alt: @rightSecondImage.alt;">
+                                                -ko-attr-width: @rightSecondImage.imageWidth; -ko-max-width: @[rightSecondImage.imageWidth]px; -ko-attr-alt: @rightSecondImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -3404,9 +3405,9 @@
                                           <tr data-ko-display="rightThirdPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightThirdImage.paddingTop]px @[rightThirdImage.paddingRight]px @[rightThirdImage.paddingBottom]px @[rightThirdImage.paddingLeft]px;">
                                               <a data-ko-link="rightThirdImage.url" href="">
-                                                <img data-ko-editable="rightThirdImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="rightThirdImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @rightThirdImageWidth; -ko-max-width: @[rightThirdImageWidth]px; -ko-attr-alt: @rightThirdImage.alt;">
+                                                -ko-attr-width: @rightThirdImage.imageWidth; -ko-max-width: @[rightThirdImage.imageWidth]px; -ko-attr-alt: @rightThirdImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -3465,9 +3466,9 @@
                                           <tr data-ko-display="rightFourthPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightFourthImage.paddingTop]px @[rightFourthImage.paddingRight]px @[rightFourthImage.paddingBottom]px @[rightFourthImage.paddingLeft]px;">
                                               <a data-ko-link="rightFourthImage.url" href="">
-                                                <img data-ko-editable="rightFourthImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="rightFourthImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @rightFourthImageWidth; -ko-max-width: @[rightFourthImageWidth]px; -ko-attr-alt: @rightFourthImage.alt;">
+                                                -ko-attr-width: @rightFourthImage.imageWidth; -ko-max-width: @[rightFourthImage.imageWidth]px; -ko-attr-alt: @rightFourthImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -3526,9 +3527,9 @@
                                           <tr data-ko-display="rightFifthPosSelect eq 'img'">
                                             <th style="padding: 0px 0px 0px 0px; -ko-padding: @[rightFifthImage.paddingTop]px @[rightFifthImage.paddingRight]px @[rightFifthImage.paddingBottom]px @[rightFifthImage.paddingLeft]px;">
                                               <a data-ko-link="rightFifthImage.url" href="">
-                                                <img data-ko-editable="rightFifthImage.src" data-ko-placeholder-height="200" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
+                                                <img data-ko-editable="rightFifthImage.src" data-ko-placeholder-height="125" class="float-center" src="http://placehold.it/125x200" alt="" width="125" align="center"
                                                 style="-ms-interpolation-mode:bicubic;clear:both;margin:0 auto;Margin:0 auto;display:block;max-width:125px;outline:0;text-decoration:none;width:125;
-                                                -ko-attr-width: @rightFifthImageWidth; -ko-max-width: @[rightFifthImageWidth]px; -ko-attr-alt: @rightFifthImage.alt;">
+                                                -ko-attr-width: @rightFifthImage.imageWidth; -ko-max-width: @[rightFifthImage.imageWidth]px; -ko-attr-alt: @rightFifthImage.alt;">
                                               </a>
                                             </th>
                                           </tr>
@@ -3585,7 +3586,7 @@
                                                   padding: 0px 0px 0px 0px; -ko-padding: @[firstImage.paddingTop]px @[firstImage.paddingRight]px @[firstImage.paddingBottom]px @[firstImage.paddingLeft]px;">
                                                     <img data-ko-editable="firstImage.src" data-ko-placeholder-height="25" src="http://placehold.it/25" alt="" width="25"
                                                     style="-ms-interpolation-mode:bicubic;border:none;clear:both;display:block;max-width:25px;outline:0;text-decoration:none;width:auto;
-                                                    -ko-attr-width: @firstSocialImageWidth; -ko-max-width: @[firstSocialImageWidth]px; -ko-attr-alt: @firstImage.alt;">
+                                                    -ko-attr-width: @firstSocialImage.imageWidth; -ko-max-width: @[firstSocialImage.imageWidth]px; -ko-attr-alt: @firstImage.alt;">
                                                   </a>
                                                 </th>
                                                 <th data-ko-display="secondSocialImageVisible" class="menu-item float-center" style="Margin:0 auto;color:#0a0a0a;float:none;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;text-align:center;">
@@ -3593,7 +3594,7 @@
                                                   padding: 0px 0px 0px 0px; -ko-padding: @[secondImage.paddingTop]px @[secondImage.paddingRight]px @[secondImage.paddingBottom]px @[secondImage.paddingLeft]px;">
                                                     <img data-ko-editable="secondImage.src" data-ko-placeholder-height="25" src="http://placehold.it/25" alt="" width="25" data-ko-placeholder-height="25"
                                                     style="-ms-interpolation-mode:bicubic;border:none;clear:both;display:block;max-width:25px;outline:0;text-decoration:none;width:auto;
-                                                    -ko-attr-width: @secondSocialImageWidth; -ko-max-width: @[secondSocialImageWidth]px; -ko-attr-alt: @secondImage.alt;">
+                                                    -ko-attr-width: @secondSocialImage.imageWidth; -ko-max-width: @[secondSocialImage.imageWidth]px; -ko-attr-alt: @secondImage.alt;">
                                                   </a>
                                                 </th>
                                                 <th data-ko-display="thirdSocialImageVisible" class="menu-item float-center" style="Margin:0 auto;color:#0a0a0a;float:none;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;text-align:center;">
@@ -3601,7 +3602,7 @@
                                                   padding: 0px 0px 0px 0px; -ko-padding: @[thirdImage.paddingTop]px @[thirdImage.paddingRight]px @[thirdImage.paddingBottom]px @[thirdImage.paddingLeft]px;">
                                                     <img data-ko-editable="thirdImage.src" data-ko-placeholder-height="25" src="http://placehold.it/25" alt="" width="25" data-ko-placeholder-height="25"
                                                     style="-ms-interpolation-mode:bicubic;border:none;clear:both;display:block;max-width:25px;outline:0;text-decoration:none;width:auto;
-                                                    -ko-attr-width: @thirdSocialImageWidth; -ko-max-width: @[thirdSocialImageWidth]px; -ko-attr-alt: @thirdImage.alt;">
+                                                    -ko-attr-width: @thirdSocialImage.imageWidth; -ko-max-width: @[thirdSocialImage.imageWidth]px; -ko-attr-alt: @thirdImage.alt;">
                                                   </a>
                                                 </th>
                                                 <th data-ko-display="fourthSocialImageVisible" class="menu-item float-center" style="Margin:0 auto;color:#0a0a0a;float:none;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;text-align:center;">
@@ -3609,7 +3610,7 @@
                                                   padding: 0px 0px 0px 0px; -ko-padding: @[fourthImage.paddingTop]px @[fourthImage.paddingRight]px @[fourthImage.paddingBottom]px @[fourthImage.paddingLeft]px;">
                                                     <img data-ko-editable="fourthImage.src" data-ko-placeholder-height="25" src="http://placehold.it/25" alt="" width="25" data-ko-placeholder-height="25"
                                                     style="-ms-interpolation-mode:bicubic;border:none;clear:both;display:block;max-width:25px;outline:0;text-decoration:none;width:auto;
-                                                    -ko-attr-width: @fourthSocialImageWidth; -ko-max-width: @[fourthSocialImageWidth]px; -ko-attr-alt: @fourthImage.alt;">
+                                                    -ko-attr-width: @fourthSocialImage.imageWidth; -ko-max-width: @[fourthSocialImage.imageWidth]px; -ko-attr-alt: @fourthImage.alt;">
                                                   </a>
                                                 </th>
                                                 <th data-ko-display="fifthSocialImageVisible" class="menu-item float-center" style="Margin:0 auto;color:#0a0a0a;float:none;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;text-align:center;">
@@ -3617,7 +3618,7 @@
                                                   padding: 0px 0px 0px 0px; -ko-padding: @[fifthImage.paddingTop]px @[fifthImage.paddingRight]px @[fifthImage.paddingBottom]px @[fifthImage.paddingLeft]px;">
                                                     <img data-ko-editable="fifthImage.src" data-ko-placeholder-height="25" src="http://placehold.it/25" alt="" width="25" data-ko-placeholder-height="25"
                                                     style="-ms-interpolation-mode:bicubic;border:none;clear:both;display:block;max-width:25px;outline:0;text-decoration:none;width:auto;
-                                                    -ko-attr-width: @fifthSocialImageWidth; -ko-max-width: @[fifthSocialImageWidth]px; -ko-attr-alt: @fifthImage.alt;">
+                                                    -ko-attr-width: @fifthSocialImage.imageWidth; -ko-max-width: @[fifthSocialImage.imageWidth]px; -ko-attr-alt: @fifthImage.alt;">
                                                   </a>
                                                 </th>
                                               </tr>
@@ -3647,7 +3648,7 @@
                                     <a data-ko-link="image.url" href="#">
                                       <img data-ko-editable="image.src" data-ko-placeholder-height="50" src="http://placehold.it/200x50/663399" width="200" alt=""
                                       style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:200px;outline:0;text-decoration:none;width:auto;
-                                      -ko-attr-width: @imageWidth; -ko-max-width: @[imageWidth]px; -ko-attr-alt: @image.alt;">
+                                      -ko-attr-width: @image.imageWidth; -ko-max-width: @[image.imageWidth]px; -ko-attr-alt: @image.alt;">
                                     </a>
                                   </th>
                                 </tr>
