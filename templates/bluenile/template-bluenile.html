@@ -36,7 +36,7 @@
 
         height { label: Height; widget: integer }
         imageHeight { label: Image Height; extend: height; }
-        imageWidth { label: Image Size; widget: integer; }
+        imageWidth { label: Image Size; widget: integer; max: 600;}
         /*imageWidth { label: Image Size; widget: select; options: 125=Small|170=Medium|250=Large|580=Xlarge; }*/
 
         lineHeight { label: Line Height; widget: integer }
@@ -143,21 +143,6 @@
         thirdPosSelect { label: Select Third Content; widget: select; options: title=Title|txt=Text|img=Image|btn=Button|empty=Empty; }
         fourthPosSelect { label: Select Fourth Content; widget: select; options: title=Title|txt=Text|img=Image|btn=Button|empty=Empty; }
         fifthPosSelect { label: Select Fifth Content; widget: select; options: title=Title|txt=Text|img=Image|btn=Button|empty=Empty; }
-        leftFirstPosSelect { label: Select Left First Content; widget: select; options: title=Title|txt=Text|img=Image|btn=Button|empty=Empty; }
-        leftSecondPosSelect { label: Select Left Second Content; widget: select; options: title=Title|txt=Text|img=Image|btn=Button|empty=Empty; }
-        leftThirdPosSelect { label: Select Left Third Content; widget: select; options: title=Title|txt=Text|img=Image|btn=Button|empty=Empty; }
-        leftFourthPosSelect { label: Select Left Fourth Content; widget: select; options: title=Title|txt=Text|img=Image|btn=Button|empty=Empty; }
-        leftFifthPosSelect { label: Select Left Fifth Content; widget: select; options: title=Title|txt=Text|img=Image|btn=Button|empty=Empty; }
-        rightFirstPosSelect { label: Select Right First Content; widget: select; options: title=Title|txt=Text|img=Image|btn=Button|empty=Empty; }
-        rightSecondPosSelect { label: Select Right Second Content; widget: select; options: title=Title|txt=Text|img=Image|btn=Button|empty=Empty; }
-        rightThirdPosSelect { label: Select Right Third Content; widget: select; options: title=Title|txt=Text|img=Image|btn=Button|empty=Empty; }
-        rightFourthPosSelect { label: Select Right Fourth Content; widget: select; options: title=Title|txt=Text|img=Image|btn=Button|empty=Empty; }
-        rightFifthPosSelect { label: Select Right Fifth Content; widget: select; options: title=Title|txt=Text|img=Image|btn=Button|empty=Empty; }
-        centerFirstPosSelect { label: Select Center First Content; widget: select; options: title=Title|txt=Text|img=Image|btn=Button|empty=Empty; }
-        centerSecondPosSelect { label: Select Center Second Content; widget: select; options: title=Title|txt=Text|img=Image|btn=Button|empty=Empty; }
-        centerThirdPosSelect { label: Select Center Third Content; widget: select; options: title=Title|txt=Text|img=Image|btn=Button|empty=Empty; }
-        centerFourthPosSelect { label: Select Center Fourth Content; widget: select; options: title=Title|txt=Text|img=Image|btn=Button|empty=Empty; }
-        centerFifthPosSelect { label: Select Center Fifth Content; widget: select; options: title=Title|txt=Text|img=Image|btn=Button|empty=Empty; }
 
         contentSelect { label: Select Content; properties: firstPosSelect secondPosSelect thirdPosSelect fourthPosSelect fifthPosSelect; }
         leftContentSelect { label: Select Left Content; extend: contentSelect; }
@@ -253,7 +238,7 @@
         hrBlock { label: Divider Block; properties: externalBackgroundColor spacerStyle spacerSize=30; theme: contentTheme }
         spacerBlock { label: Spacer Block; properties: externalBackgroundColor spacerStyle spacerSize=30; theme: contentTheme }
 
-        textCopyCtaBlock { label: Full Width Block; properties: externalBackgroundColor backgroundColor contentSelect.firstPosSelect=img contentSelect.secondPosSelect=title contentSelect.thirdPosSelect=txt contentSelect.fourthPosSelect=btn contentSelect.fifthPosSelect=empty titleTextStyle firstImage.imageWidth=125 secondImage.imageWidth=125 thirdImage.imageWidth=125 fourthImage.imageWidth=125 fifthImage.imageWidth=125; theme: contentTheme }
+        textCopyCtaBlock { label: Full Width Block; properties: externalBackgroundColor backgroundColor contentSelect.firstPosSelect=title contentSelect.secondPosSelect=img contentSelect.thirdPosSelect=btn contentSelect.fourthPosSelect=empty contentSelect.fifthPosSelect=empty titleTextStyle firstImage.imageWidth=125 secondImage.imageWidth=125 thirdImage.imageWidth=125 fourthImage.imageWidth=125 fifthImage.imageWidth=125; theme: contentTheme }
         fortySixtyBlock { label: Forty by Sixty Block; properties: externalBackgroundColor backgroundColor leftContentSelect.firstPosSelect=img leftContentSelect.secondPosSelect=empty leftContentSelect.thirdPosSelect=empty leftContentSelect.fourthPosSelect=empty leftContentSelect.fifthPosSelect=empty rightContentSelect.firstPosSelect=title rightContentSelect.secondPosSelect=txt rightContentSelect.thirdPosSelect=btn rightContentSelect.fourthPosSelect=empty rightContentSelect.fifthPosSelect=empty leftFirstImage.imageWidth=125 leftSecondImage.imageWidth=125 leftThirdImage.imageWidth=125 leftFourthImage.imageWidth=125 leftFifthImage.imageWidth=125 rightFirstImage.imageWidth=125 rightSecondImage.imageWidth=125 rightThirdImage.imageWidth=125 rightFourthImage.imageWidth=125 rightFifthImage.imageWidth=125; theme: contentTheme }
         sixtyFortyBlock { label: Sixty by Forty Block; properties: externalBackgroundColor backgroundColor leftContentSelect.firstPosSelect=title leftContentSelect.secondPosSelect=txt leftContentSelect.thirdPosSelect=btn leftContentSelect.fourthPosSelect=empty leftContentSelect.fifthPosSelect=empty rightContentSelect.firstPosSelect=img rightContentSelect.secondPosSelect=empty rightContentSelect.thirdPosSelect=empty rightContentSelect.fourthPosSelect=empty rightContentSelect.fifthPosSelect=empty leftFirstImage.imageWidth=125 leftSecondImage.imageWidth=125 leftThirdImage.imageWidth=125 leftFourthImage.imageWidth=125 leftFifthImage.imageWidth=125 rightFirstImage.imageWidth=125 rightSecondImage.imageWidth=125 rightThirdImage.imageWidth=125 rightFourthImage.imageWidth=125 rightFifthImage.imageWidth=125; theme: contentTheme }
         fiftyFiftyBlock { label: Fifty by Fifty Block; properties: externalBackgroundColor backgroundColor leftContentSelect.firstPosSelect=img leftContentSelect.secondPosSelect=title leftContentSelect.thirdPosSelect=txt leftContentSelect.fourthPosSelect=btn leftContentSelect.fifthPosSelect=empty rightContentSelect.firstPosSelect=img rightContentSelect.secondPosSelect=title rightContentSelect.thirdPosSelect=txt rightContentSelect.fourthPosSelect=btn rightContentSelect.fifthPosSelect=empty leftFirstImage.imageWidth=125 leftSecondImage.imageWidth=125 leftThirdImage.imageWidth=125 leftFourthImage.imageWidth=125 leftFifthImage.imageWidth=125 rightFirstImage.imageWidth=125 rightSecondImage.imageWidth=125 rightThirdImage.imageWidth=125 rightFourthImage.imageWidth=125 rightFifthImage.imageWidth=125; theme: contentTheme }
