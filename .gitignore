@@ -6,3 +6,13 @@ uploads/**
 !.tmp/README.md
 build
 dist
+.DS_Store
+templates/bluenile/edres/fiftyFiftyBlock.png
+templates/bluenile/edres/footerCenteredBlock.png
+templates/bluenile/edres/fortySixtyBlock.png
+templates/bluenile/edres/hrBlock.png
+templates/bluenile/edres/simpleHdrBlock.png
+templates/bluenile/edres/sixtyFortyBlock.png
+templates/bluenile/edres/spacerBlock.png
+templates/bluenile/edres/textCopyCtaBlock.png
+templates/bluenile/edres/threeWideBlock.png

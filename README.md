@@ -3,8 +3,14 @@
 - mainly b/c it creates the thumbnail images for all the blocks :)
 - and it's easy to iteratively debug here, then transfer to BN app when ready
 
+once run this:
 $sudo npm install --save-dev
+$sudo grunt
+
+every time you update the template, run this to regenerate block preview images:
 $sudo grunt makeThumbs
+
+to test out the email builder, run this:
 $sudo grunt server
 
 # Original Mosaico Notes Below
