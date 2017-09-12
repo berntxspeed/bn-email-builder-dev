@@ -33,6 +33,7 @@
         src { label: Image; widget: src }
         hrWidth { label: Width; widget: select; options:10|20|30|40|50|60|70|80|90|100; }
         hrHeight { label: Line height; widget: integer; max: 80; }
+        hrPadding { label: Divider padding; widget: integer; max: 100; }
 
         height { label: Height; widget: integer }
         imageHeight { label: Image Height; extend: height; }
@@ -60,7 +61,7 @@
           help: If -None- is selected, preHeader text will be shown;
         }
 
-        hrStyle { label: Separator Style;properties:color hrWidth hrHeight; }
+        hrStyle { label: Separator Style;properties:color hrWidth hrHeight hrPadding; }
         hrStyle:preview { height: 200%; width: 200%; bottom: 20px; -ko-border-bottom: @[hrHeight]px solid @color; }
         preheaderVisible { label: Show Preheader; extend: visible; help: Preheader block is the first one on the top of the page. It contains web version link and optionally unsubscribe link or a preheader text that will be shown as a preview on some email clients; }
 
@@ -73,6 +74,8 @@
 
         /* STEVE !!!!!!!!!!!!!!! LOOK AT THIS SHITTTTTTTTTT!!!!!!!!!! */
         hrColor { label: Header Divider Color; extend: color }
+        hrWidth { label: Width; widget: select; options:10|20|30|40|50|60|70|80|90|100; }
+        hrHeight { label: Line height; widget: integer; max: 80; }
 
         /* texts and links */
         longText { label: Text; properties: text paddingTop paddingRight paddingBottom paddingLeft; }
@@ -235,7 +238,7 @@
 
         footerBlock { label: Unsubscribe Block; theme: frameTheme }
 
-        hrBlock { label: Divider Block; properties: externalBackgroundColor spacerStyle spacerSize=30; theme: contentTheme }
+        hrBlock { label: Divider Block; properties: externalBackgroundColor hrStyle; theme: contentTheme }
         spacerBlock { label: Spacer Block; properties: externalBackgroundColor spacerStyle spacerSize=30; theme: contentTheme }
 
         textCopyCtaBlock { label: Full Width Block; properties: externalBackgroundColor backgroundColor contentSelect.firstPosSelect=title contentSelect.secondPosSelect=img contentSelect.thirdPosSelect=btn contentSelect.fourthPosSelect=empty contentSelect.fifthPosSelect=empty titleTextStyle firstImage.imageWidth=125 secondImage.imageWidth=125 thirdImage.imageWidth=125 fourthImage.imageWidth=125 fifthImage.imageWidth=125; theme: contentTheme }
@@ -357,12 +360,29 @@
                       <table data-ko-block="hrBlock" class="spacer" style="background-color: #f0f0f0;bgcolor: #f0f0f0; -ko-background-color: @backgroundColor; -ko-attr-bgcolor: @backgroundColor;border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
                         <tbody>
                           <tr style="padding:0;text-align:left;vertical-align:top">
-                            <td height="30px" style="background-color: #f0f0f0;bgcolor: #f0f0f0;-ko-background-color: @backgroundColor;ko-attr-bgcolor: @backgroundColor;-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:30px;font-weight:400;hyphens:auto;line-height:30px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;
-                            -ko-attr-height: @[spacerSize]px;-ko-line-height: @[spacerSize]px;-ko-font-size: @[spacerSize]px;">
-                              <hr style="border:0;border-top:1px solid #000000;color:#000000;background-color:#000000;
-                              -ko-background-color: @hrColor;-ko-border-top:1px solid @hrColor;-ko-color:@hrColor"/>
-                              <!-- STEVE !!!!!!!!!!!!!!! LOOK AT THIS SHITTTTTTTTTT!!!!!!!!!! -->
-                            </td> <!-- add header divider thickness to the 1px part of ko-border-top.  note replace 1px with atsign[hrThickness]px -->
+                            <td height="19px" style="background-color: #f0f0f0;bgcolor: #f0f0f0;-ko-background-color: @backgroundColor;ko-attr-bgcolor: @backgroundColor;-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:30px;font-weight:400;hyphens:auto;line-height:30px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word;
+                            padding-bottom: 10px; padding-top: 10px;
+                            -ko-padding-bottom: @[hrStyle.hrPadding]px;-ko-padding-top: @[hrStyle.hrPadding]px;">
+                              <div class="oldwebkit">
+                              <table width="570" border="0" cellpadding="0" cellspacing="9" class="vb-container halfpad" bgcolor="#f0f0f0"
+                                style="width: 100%; max-width: 570px; background-color: #f0f0f0; -ko-attr-bgcolor: @backgroundColor; -ko-background-color: @backgroundColor;">
+                                <tr>
+                                  <td valign="top" bgcolor="#f0f0f0" style="background-color: #f0f0f0;
+                                    -ko-attr-bgcolor: @backgroundColor; -ko-background-color: @backgroundColor" align="center">
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0"
+                                      style="width:100%; -ko-width: @[hrStyle.hrWidth]%; -ko-attr-width: @[hrStyle.hrWidth]%">
+                                      <tr>
+                                        <td width="100%" height="1" style="font-size:1px; line-height: 1px; width: 100%; background-color: #3a3f3f;
+                                        -ko-background-color: @hrStyle.color; -ko-attr-height: @hrStyle.hrHeight; -ko-line-height: @[hrStyle.hrHeight]px; ">
+                                          &nbsp;
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              </div>
+                            </td>
                           </tr>
                         </tbody>
                       </table>
